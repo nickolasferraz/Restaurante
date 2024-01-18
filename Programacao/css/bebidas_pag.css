@@ -73,3 +73,26 @@ body {
     width: 100%;
     height: auto;
   }
+
+  .conteiner_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 332px;
+    padding: 0 35px; /* Ajuste o padding para 35px em cada lado */
+    box-sizing: border-box; /* Mantém a largura total incluindo o padding */
+    max-width: 100%; 
+    overflow: scroll;
+  }
+  
+  .blockcard {
+    flex: none;
+    width: 200px;
+    max-width: 200px; /* Largura máxima de cada bloco é 70px */
+    height: 332px;
+    background-color: #1d1908;
+    border-radius: 30px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
