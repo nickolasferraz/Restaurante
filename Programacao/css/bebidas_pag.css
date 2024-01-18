@@ -3,12 +3,8 @@
     padding: 0;
 }
 
-body {
-    height: 2000px;
-    padding-top: 8vh;
-}
 
-a {
+.nav-bar a {
     color: black;
     text-decoration: none;
     font-weight: 650;
@@ -20,12 +16,16 @@ a {
     opacity: 0.10;
 }
 
+.nav-list a:active {
+    opacity: 0.10;
+}
+
 .logo img {
     margin-top: 5px;
     width: 50px;
 }
 
-nav {
+.nav-bar nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
