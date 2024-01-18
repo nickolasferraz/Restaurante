@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="css/carrinho_css.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="/" class="logo"><img src="img/Logo.png" alt="logo" /></a>
+          <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Cardápio</a></li>
+            <li><a href="/">Sobremesas</a></li>
+            <li><a href="/">Bebidas</a></li>
+            <li><a href="/"><img class="cart-icon" src="img/shopping-cart.png" alt="carrinho icon"></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+          <form class="mesas">
+            <div class="mesas-css-posicao">
+            <label for="form-mesas">Escolha sua mesa: </label>
+              <select name="select" id="form-mesas">
+                <option value="mesa1">1</option>
+                <option value="mesa2">2</option>
+                <option value="mesa3">3</option>
+                <option value="mesa4">4</option>
+                <option value="mesa5">5</option>
+                <option value="mesa6">6</option>
+                <option value="mesa7">7</option>
+                <option value="mesa8">8</option>
+              </select>
+              </div>
+              <input type="submit" value="Fazer Pedido" />
+          </form>
+
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="img/coca.PNG" alt="refrigerante-cola">
+                <p>1x</p>
+                <p>Refrigerante de cola</p>
+                <p>R$ 3,06</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="img/churros.PNG" alt="churros1">
+                <p>1x</p>
+                <p>Churros Doce de Leite</p>
+                <p>R$ 19,00</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row2">
+            <div class="column2">
+              <div class="card2">
+                <p id="p-total">Total:</p>
+                <p id="p-dinheiro">R$ 22,06</p>
+              </div>
+          </div>
+
+        </section>
+      </main>
+</body>
+</html>
