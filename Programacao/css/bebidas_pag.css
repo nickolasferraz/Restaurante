@@ -103,13 +103,53 @@ body {
     background-color: #FFCD0D;
 }
 
-.apressentacao-slide {
-    white-space: nowrap;
+
+section .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 5px;
+    margin-bottom: 120px;
 }
 
-.apresentacao-slide img {
-    height: 50px;
+section .main .menu_text h1 {
+    font-size: 60px;
+    position: relative;
 }
+
+section .main .menu_text h2 {
+    font-size: 25px;
+    top: 30px;
+    position: relative;
+    font-family: mv boli;
+}
+
+section .main .menu_text h1 span {
+    margin-left: 10px;
+    color: #fac031;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 4vw;
+    top: 10vh; 
+}
+
+section .main .main_image img {
+    width: 43vh;
+    position: relative;
+    left: 25px;
+}
+
+
+section .main_image img {
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+} 
+
 
 /*
     variaveis do prato do dia abaixo 
