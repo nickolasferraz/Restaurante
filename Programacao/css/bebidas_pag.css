@@ -170,11 +170,7 @@ body {
 .conteiner-promocoes-do-dia-1 {
     position: absolute;
     left: 600px;
-}
-
-.conteiner-promocoes-do-dia-1 h1 {
-    display: flex;
-    j
+    top: 200%;
 }
   
 .row2 {
@@ -211,3 +207,37 @@ body {
     border-radius: 10%;
     background-color: #54eb08dd;
 }
+
+.conteiner-promocoes-do-dia-2 {
+    position: absolute;
+    left: 5%;
+}
+
+.column3 {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+  
+.row3 {margin: 0 -5px;}
+  
+.row3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.card3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(255, 207, 13, 0.419);
+}
+  
+@media screen and (max-width: 600px) {
+    .column3 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
