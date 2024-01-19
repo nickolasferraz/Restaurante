@@ -73,3 +73,8 @@ body {
     width: 100%;
     height: auto;
   }
+
+.conteinerpratos_1{
+    display: flex;
+    background-color: #FFCD0D;
+}
