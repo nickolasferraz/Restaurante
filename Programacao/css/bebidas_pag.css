@@ -73,8 +73,129 @@ body {
     width: 100%;
     height: auto;
   }
+  .prato_do_dia{
+    display: flex;
+    border: 1px solid rgba(0, 30, 255, 0.046);
+    border-radius: 8px;
+    margin: 15px;
+    padding: 40px;
+    width: 250px;
+    height:400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+  }
+  .pratos-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 2px;
+
+  }
 
 .conteinerpratos_1{
     display: flex;
     background-color: #FFCD0D;
+}
+
+
+.carrossel {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.itens_apresentacao {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.itens_apresentacao li img {
+    width: 250px;
+    height: 250px;
+    transition: width 2s ease-in-out;
+    transition: height 2s ease-in-out;
+}
+
+.itens_apresentacao li img:hover{
+    width: 400px;
+    height: 250px;
+}
+
+/*
+    variaveis do prato do dia abaixo 
+    */
+
+.item_pratos_principais{
+    display: flex;
+    min-width: 110px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    background-color: #dddd;
+    display: flex;
+    border: 1px solid rgba(0, 30, 255, 0.046);
+    border-radius: 8px;
+    margin: 15px;
+    padding: 40px;
+    width: 200px;
+    height:200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+
+}
+.Media-scroller{
+    max-height: 400px;
+    border: 1px solid #c9a400;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+.conteiner-pratos-do-dia {
+    position: absolute;
+    left: 600px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    padding: 10px 30px;
+}
+  
+.row2 {
+    padding: 8%;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.card2 {
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: rgba(255, 207, 13, 0.419);
+}
+
+.card2 img {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 20%;
+}
+
+.card2 p {
+    padding: 55px;
 }
