@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+.main-content {
+    padding-bottom: 125vh;
+  }
 
 .nav-bar a {
     color: black;
@@ -281,3 +284,10 @@ section .main_image img {
       margin-bottom: 20px;
     }
   }
+
+footer .footer_contatos {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
