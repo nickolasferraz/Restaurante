@@ -102,11 +102,16 @@ body {
 }
 
 .card button {
-  background-color: #abb8c3;
-  color: white;
-  font-size: 16px;
+  background-color: #FFCD0D;
+  margin-top: 3px;
+  height: 30px;
+  padding: 6px;
+  width: 100%;
+  color: rgb(2, 2, 2);
+  font-size: 1rem;
+  font-weight:bold;
+  transition: all 0.3s ease-out;
   border-radius: 5px;
-  padding: 12px 23px;
 }
 
 .card button:hover {
