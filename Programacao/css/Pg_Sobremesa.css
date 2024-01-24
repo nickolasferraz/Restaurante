@@ -89,11 +89,13 @@ body {
     height: 332px;
     padding: 40px 30px;
      overflow-y: hidden; /* Permite rolar horizontalmente e prende à borda mais próxima */
-    overflow-x: scroll; /* Adiciona rolagem horizontal */
+    overflow-x: hidden; /* Adiciona rolagem horizontal */
     align-items: flex-start;
   }
   .blockcard {
     display: flex;
+    flex-direction: column;
+    text-align:justify;
     width: 200px;
     height: 332px;
     background-color: white;
@@ -137,6 +139,9 @@ body {
   text-align: center;
 }
 .card_descrição {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Alinha os elementos na direção principal (vertical) */
   height: 100%;
   width: 100%;
   text-align: center;
@@ -144,6 +149,8 @@ body {
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
   font-weight: 100;
+  overflow: hidden;
+  
   
 }
 
@@ -155,3 +162,9 @@ body {
   flex-shrink: 0;
   margin-right: 10px; /* ou qualquer espaçamento desejado entre os itens */
 }
+
+.card_titulo {
+  white-space: normal; /* Alterado para permitir quebras de linha no título */
+  text-align: center;
+}
+
