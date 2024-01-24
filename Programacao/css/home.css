@@ -202,14 +202,10 @@ section .main_image img {
 }
 
 
-
-
-
-
 .conteiner-promocoes-do-dia-1 {
     position: absolute;
     left: 600px;
-    top: 200%;
+    /* top: 200%; */
 }
   
 .row2 {
@@ -250,6 +246,7 @@ section .main_image img {
 .conteiner-promocoes-do-dia-2 {
     position: absolute;
     left: 5%;
+    padding-top: 50px;
 }
 
 .column3 {
