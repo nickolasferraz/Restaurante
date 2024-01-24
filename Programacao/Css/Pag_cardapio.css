@@ -4,7 +4,47 @@
     margin: 0;
     padding: 0;
 }
+.nav-bar a {
+    color: black;
+    text-decoration: none;
+    font-weight: 650;
+    transition: 0.3s;
+    font-family: "KROP 2";
+}
+.logo img {
+    margin-top: 5px;
+    width: 50px;
+}
 
+.nav-bar nav {
+    z-index: 9999;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #FFCD0D;
+    height: 8vh;
+    position: fixed;  
+    top: 0; 
+    width: 100%;      
+  }
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.cart-icon {
+    display: flex;
+    margin-left: 9vh;
+    width: 30px;
+    height: 30px;
+}
+/* sete de cabeçalho */
 
 /* sete de cards produtos */
 body{
