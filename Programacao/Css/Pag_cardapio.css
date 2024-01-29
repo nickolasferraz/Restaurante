@@ -44,6 +44,9 @@
     width: 30px;
     height: 30px;
 }
+header{
+    font-family: 'krop 2', Times, serif;
+}
 /* sete de cabeçalho */
 
 /* sete de cards produtos */
@@ -52,7 +55,7 @@ body{
     /* /* justify-content: center; */
     align-items: center;
     height: 100vh;
-    font-family: "KROP 2";
+    font-family: 'krop 2', Times, serif;
     gap: 16px;
     background-image: url('teste');
     height: 100%;
@@ -60,6 +63,7 @@ body{
     width: 100%;
     margin: 0;
     overflow-x: hidden;
+    
 
 }
 
@@ -94,12 +98,13 @@ body{
     font-weight:bold;
     cursor:pointer;
     transition: all 0.3s ease-out;
+    transform:translateY(-5px);
+
     
 }
 .card:hover{
     transform:translateY(-5px);
-    cursor:pointer;
-    
+
 }
 .card p{
     color: rgb(26, 210, 10);
@@ -124,6 +129,13 @@ button{
     text-align: center;
 }
 
+  /* fonte  */
+  @font-face {
+    font-family:'krop 2';
+    src: url('Programacao/fontes/KROP2-BF653c20fc2157e.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
   
   
 
