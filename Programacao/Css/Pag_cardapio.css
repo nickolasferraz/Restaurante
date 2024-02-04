@@ -52,17 +52,15 @@ header{
 /* sete de cards produtos */
 body{
     display: flex;
-    /* /* justify-content: center; */
+    justify-content: start;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     font-family: 'krop 2', Times, serif;
     gap: 16px;
-    background-image: url('teste');
-    height: 100%;
     overflow: auto;
     width: 100%;
     margin: 0;
-    overflow-x: hidden;
+    
     
 
 }
@@ -71,27 +69,32 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    
    
 }
 
 .card{
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0 rgba(50,50,50, 0.22);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(205, 219, 7);
     padding: 20px;
     margin: 20px;
     width: 200px;
+    height: 400px;
     transition: all 0.3s ease-out;
+    position: relative;
     
 
 }
 
 
 .card button{
+    
+    
     background-color: #FFCD0D;
     height: 30px;
     border: none;
-    padding: 6px;
+    padding: 0px;
     width: 100%;
     color: rgb(2, 2, 2);
     font-size: 1rem;
@@ -108,7 +111,7 @@ body{
 }
 .card p{
     color: rgb(26, 210, 10);
-    font-size: 16px;
+    font-size: 0.8rem;
 }
 .image{
     float: right;
@@ -128,6 +131,7 @@ button{
     justify-content: center;
     text-align: center;
 }
+
 
   /* fonte  */
   @font-face {
