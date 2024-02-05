@@ -1,0 +1,29 @@
+/* sete de cards produtos */
+body{
+    justify-content: start;
+    align-items: center;
+    font-family: 'krop 2', Times, serif;
+    gap: 16px;
+    overflow: auto;
+    width: 100%;
+    margin: 0;
+
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  /* fonte  */
+  @font-face {
+    font-family:'krop 2';
+    src: url('Programacao/fontes/KROP2-BF653c20fc2157e.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+

@@ -1,0 +1,67 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.card--produtos {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0 rgba(50,50,50, 0.22);
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    height: 400px;
+    transition: all 0.3s ease-out;
+    position: relative;
+    border-left: 3px solid #3bb54a ;
+    border-top: 3px solid #3bb54a ;
+    border-right: 3px solid #3bb54a;
+}
+
+.card--produtos button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position:absolute;
+    top: 400px;
+    background-color: #FFCD0D;
+    height: 30px;
+    padding: 0px;
+    width: 200px;
+    color: rgb(2, 2, 2);
+    font-size: 1rem;
+    font-weight:bold;
+    transition: all 0.3s ease-out;
+    border-radius: 5px;
+    font-family:'krop 2';
+}
+
+.card--produtos button:hover {
+    cursor: pointer;
+  } 
+
+.card--produtos:hover{
+    transform:translateY(-5px);
+
+}
+.card--produtos p{
+    color: rgb(26, 210, 10);
+    font-size: 0.8rem;
+}
+.image {
+    float: right;
+    width: 200px;
+    height:250px;
+}
+
+
+.cardimage {
+    width: 100%;
+    height: 100%;
+}
+
+.card_titulo {
+    white-space: normal; /* Alterado para permitir quebras de linha no título */
+    text-align: center;
+  }

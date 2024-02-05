@@ -31,76 +31,21 @@ body {
     border-radius: 8px;
 
   }
-  
-  /* style pratos do dia = joao */
-  .row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-}
-
-.cards{
-    border-radius: 5px;
-    box-shadow: 7px 7px 13px 0 rgba(50,50,50, 0.22);
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    margin: 20px;
-    width: 200px;
-    transition: all 0.3s ease-out;
-    
-
-}
 
 
-.cards button{
-    background-color: #FFCD0D;
-    height: 30px;
-    border: none;
-    padding: 6px;
-    width: 100%;
-    color: rgb(2, 2, 2);
-    font-size: 1rem;
-    font-weight:bold;
-    cursor:pointer;
-    transition: all 0.3s ease-out;
-    
-}
-.cards:hover{
-    transform:translateY(-5px);
-    cursor:pointer;
-    
-}
-.cards p{
-    color: rgb(26, 210, 10);
-    font-size: 16px;
-}
+
 .imagens{
     float: right;
     width: 200px;
     height:200px;
     
 }
-.green{
-    border-left: 3px solid #3bb54a ;
-    border-top: 3px solid #3bb54a ;
-    border-right: 3px solid #3bb54a;
-}
 
-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+
 
   /* final pratos do dia = joao */
 
 
-.conteiner pratos_1{
-    display: flex;
-    background-color: #FFCD0D;
-}
 
 
 section .main {
@@ -121,13 +66,11 @@ section .main .menu_text h2 {
     font-size: 25px;
     top: 30px;
     position: relative;
-    font-family: mv boli;
 }
 
 section .main .menu_text h1 span {
     margin-left: 10px;
     color: #fac031;
-    font-family: mv boli;
     line-height: 22px;
     font-size: 4vw;
     top: 10vh; 
@@ -150,62 +93,9 @@ section .main_image img {
 } 
 
 
-/*
-    variaveis do prato do dia abaixo 
-    */
-
-.item_pratos_principais{
-    display: flex;
-    min-width: 110px;
-    height: 110px;
-    line-height: 110px;
-    text-align: center;
-    background-color: #dddd;
-    display: flex;
-    border: 1px solid rgba(0, 30, 255, 0.046);
-    border-radius: 8px;
-    margin: 15px;
-    padding: 40px;
-    width: 200px;
-    height:200px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgb(0, 0, 0);
-}
-
-.item_pratos_principais h1{
-    font-size: 1.2rem;
-
-}
-.item_pratos_principais h2{
-    font-size: .9rem;
-    color: #aaaa;
-}
-.item_pratos_principais button{
-    
-    background-color: red;
-    height: 30px;
-    border: none;
-    padding: 4px;
-    width: 80%;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 30px;
-}
-.Media-scroller{
-    max-height: 400px;
-    border: 1px solid #c9a400;
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-
 .conteiner-promocoes-do-dia-1 {
     position: absolute;
     left: 600px;
-    /* top: 200%; */
 }
   
 .row2 {
@@ -278,61 +168,3 @@ section .main_image img {
     }
   }
 
-  footer {
-    background-color: #FFCD0D;
-    color: #000;
-    font-family: sans-serif;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-logo img{
-    width: 100px;
-    margin-bottom: 20px;
-  }
-  
-  .footer-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .footer-links li {
-    display: block;
-  }
-  
-  .footer-links a {
-    color: #000;
-    text-decoration: none;
-  }
-  
-  .footer-social-media {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .footer a:hover {
-    opacity: 0.5;
-  }
-  
-  .footer-social-media li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .footer-social-media a {
-    color: #000;
-    text-decoration: none;
-    border-radius: 50%;
-    padding: 5px 10px;
-  }
-
-  .footer-copyright {
-    text-align: center;
-  }
