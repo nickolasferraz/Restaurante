@@ -65,3 +65,7 @@
     white-space: normal; /* Alterado para permitir quebras de linha no título */
     text-align: center;
   }
+
+.titulo--secoes {
+    text-align: center;
+}
