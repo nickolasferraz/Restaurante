@@ -1,13 +1,14 @@
 /* sete de cards produtos */
 body{
+    padding-top: 8vh;
     justify-content: start;
     align-items: center;
+    background-color: blueviolet;
     font-family: 'krop 2', Times, serif;
     gap: 16px;
     overflow: auto;
     width: 100%;
     margin: 0;
-
 }
 
 .row{
@@ -16,6 +17,15 @@ body{
     justify-content: center;
 }
 
+.tacos--secao{
+  background-color: green;
+}
+.burritos--secao{
+  background-color: red;
+}
+.Experimente--secoes{
+  background-color: blue;
+}
 
   /* fonte  */
   @font-face {

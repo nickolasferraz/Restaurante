@@ -32,7 +32,7 @@
     align-items: center;
     background: #ffcd0d;
     height: 8vh;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
   }

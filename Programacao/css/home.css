@@ -3,11 +3,6 @@
     padding: 0;
 }
 
-.main-content {
-    /* para deixar o footer lá em baixo */
-    padding-bottom: 125vh;
-  }
-
 
 body {
     padding-top: 8vh;
@@ -93,73 +88,9 @@ section .main_image img {
 } 
 
 
-.conteiner-promocoes-do-dia-1 {
-    position: absolute;
-    left: 600px;
-}
-  
-.row2 {
-    padding: 8%;
-}
-  
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-  
-.card2 {
-    display: flex;
-    justify-content: flex-end;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    background-color: rgba(255, 207, 13, 0.419);
-}
 
-.card2 img {
-    display: flex;
-    justify-content: flex-start;
-    padding: 20px;
-    width: 20%;
-}
 
-.card2 p {
-    padding: 55px;
-}
 
-.card2 button {
-    padding: 20px;
-    border-radius: 10%;
-    background-color: #54eb08dd;
-}
-
-.conteiner-promocoes-do-dia-2 {
-    position: absolute;
-    left: 5%;
-    padding-top: 50px;
-}
-
-.column3 {
-    float: left;
-    width: 50%;
-    padding: 0 10px;
-}
-  
-.row3 {margin: 0 -5px;}
-  
-.row3:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-  
-.card3 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: rgba(255, 207, 13, 0.419);
-}
-  
 @media screen and (max-width: 600px) {
     .column3 {
       width: 100%;
