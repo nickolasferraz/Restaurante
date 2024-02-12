@@ -35,6 +35,12 @@
     font-family:'krop 2';
 }
 
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .card--produtos button:hover {
     cursor: pointer;
   } 
