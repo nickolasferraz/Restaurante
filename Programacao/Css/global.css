@@ -5,27 +5,35 @@
 
 /* sete de cards produtos */
 body{
-    padding-top: 8vh;
+    padding-top: 4vh;
     justify-content: start;
     align-items: center;
     background-color: blueviolet;
     font-family: 'krop 2', Times, serif;
     gap: 16px;
     overflow: auto;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
+    
 }
-
+html{
+  scroll-behavior: smooth;
+}
 
 
 .tacos--secao{
-  background-color: green;
+  width: 100vw;
+  /* background-color: green; */
+  background-image: url('./Programacao/imagens_fondo/comida-mexicana-1664393072089_v2_4x3.jpg');
 }
 .burritos--secao{
-  background-color: red;
+  width: 100vw;
+  background-image: url('./Programacao/imagens_fondo/comida-mexicana.png');
 }
 .Experimente--secoes{
-  background-color: blue;
+  width: 100vw;
+  background-image: url('./Programacao/imagens_fondo/e3cae036c4e2bea1fb8b65e8b2938a97_XL.jpg');
 }
 
   /* fonte  */
