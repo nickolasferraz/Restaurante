@@ -1,13 +1,14 @@
 .scroll--button {
-    position: fixed;
-    right: 0;
-    margin-top: 370px; 
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  position: fixed;
+  margin-top: auto;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  margin-right: 5px;
+}
   
   .scroll--button li {
     background-color: transparent; 
