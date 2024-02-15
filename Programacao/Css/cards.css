@@ -69,27 +69,16 @@
 .card--produtos--imagem {
     float: right;
     width: 200px;
-    height:250px;
-    
-    
+    height:250px; 
 }
 
-.titulo--secoes {
-    color: #FFCD0D;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 1px;
-    padding: 22px;
-  }
 
 .card_titulo {
     white-space: normal;
     text-align: center;
   }
 
-.titulo--secoes {
-    text-align: center;
-}
+
 
 hr {
     width: 100%;

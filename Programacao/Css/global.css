@@ -11,7 +11,7 @@ body{
     background-color: blueviolet;
     font-family: 'krop 2', Times, serif;
     gap: 16px;
-    overflow: auto;
+    overflow-x: hidden;
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -80,3 +80,13 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
   
   
 
+  .titulo--secoes {
+    color: #FFCD0D;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1px;
+    padding: 22px;
+  }
+  .titulo--secoes {
+    text-align: center;
+}
