@@ -12,7 +12,7 @@ body{
     font-family: 'krop 2', Times, serif;
     gap: 16px;
     overflow: auto;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     margin: 0;
     
@@ -21,20 +21,54 @@ html{
   scroll-behavior: smooth;
 }
 
-
+/* o elemento root deixa tudo disponivel globalmente, entao se alterar a cor vai mudar tudo que tem,
+a VAR(GRADIENT E A REVERSE-GRADIENTE) */
+:root{
+  --gradient: linear-gradient(
+    180deg,
+    rgba(137, 43, 226, 0.788),
+    rgba(210, 180, 140, 0.6),
+    rgba(2, 255, 2, 0.767)
+    )
+}
+:root{
+  --reverse-gradient:linear-gradient(
+    180deg,
+    rgba(2, 255, 2, 0.767),
+    rgba(210, 180, 140, 0.6),
+    rgba(137, 43, 226, 0.3)); 
+}
 .tacos--secao{
-  width: 100%;
-  /* background-color: green; */
-  background-image: url('./Programacao/imagens_fondo/comida-mexicana-1664393072089_v2_4x3.jpg');
+  width: 100vw;
+  background-image:linear-gradient(180deg,rgba(0,0,0,0.8)70%,rgba(137, 43, 226, 0.788)), url('./Programacao/imagens_fondo/comida-mexicana-1664393072089_v2_4x3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 .burritos--secao{
-  width: 100%;
-  background-image: url('./Programacao/imagens_fondo/comida-mexicana.png');
+  width: 100vw;
+  background-image:var(--gradient);
+  padding: 3px 0;
+  
 }
 .Experimente--secoes{
-  width: 100%;
-  background-image: url('./Programacao/imagens_fondo/e3cae036c4e2bea1fb8b65e8b2938a97_XL.jpg');
+  width: 100vw;
+  padding: 3px 0;
+  background-image: var(--reverse-gradient);
+
 }
+  /* background-image:linear-gradient(to left,rgba(2, 255, 2, 0.767),rgba(210, 180, 140, 0.6),rgba(137, 43, 226, 0.3));
+  background-size: 500% 100%;
+  animation: degrade-animado 5s infinite alternate ;
+}
+@keyframes degrade-animado{
+  0%{
+    background-position-x:0% ;
+  }
+  100%{
+    background-position-x: 100%;
+  }
+} */
 
   /* fonte  */
   @font-face {

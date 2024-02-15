@@ -3,7 +3,7 @@
 .card--produtos {
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0 rgba(50,50,50, 0.22);
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     margin: 20px;
     width: 200px;
@@ -11,6 +11,16 @@
     transition: all 0.3s ease-out;
     position: relative;
     border: 3px solid #3bb54a;
+    /* testes */
+    top: 0;
+    left: 0;
+    background-color: white;
+    ;
+}
+.card--produtos:hover{
+  background-color: #FFCD0D;
+  opacity: 1;
+  transition: 1.8s
 }
 
 .card--produtos button{
@@ -38,7 +48,11 @@
   align-items:center;
   justify-content: center;
   flex-wrap: wrap;
+  
 }
+
+
+
 
 .card--produtos button:hover {
     cursor: pointer;
@@ -56,6 +70,8 @@
     float: right;
     width: 200px;
     height:250px;
+    
+    
 }
 
 .titulo--secoes {
