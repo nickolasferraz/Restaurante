@@ -43,7 +43,6 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
   background-image:linear-gradient(180deg,rgba(0,0,0,0.8)70%,rgba(137, 43, 226, 0.788)), url('./Programacao/imagens_fondo/comida-mexicana-1664393072089_v2_4x3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 .burritos--secao{
   width: 100vw;

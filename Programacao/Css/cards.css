@@ -15,7 +15,6 @@
     top: 0;
     left: 0;
     background-color: white;
-    ;
 }
 .card--produtos:hover{
   background-color: #FFCD0D;
@@ -51,9 +50,6 @@
   
 }
 
-
-
-
 .card--produtos button:hover {
     cursor: pointer;
   } 
@@ -78,8 +74,6 @@
     white-space: normal;
     text-align: center;
   }
-
-
 
 hr {
     width: 100%;

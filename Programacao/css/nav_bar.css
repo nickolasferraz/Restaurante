@@ -15,8 +15,8 @@
   width: 50px;
 }
 
-.nav-bar nav {
 
+.nav-bar nav {
   z-index: 9999;
   display: flex;
   justify-content: space-evenly;
