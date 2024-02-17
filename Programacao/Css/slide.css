@@ -1,7 +1,7 @@
 
 
   .slide_conteiner_2 {
-    
+    user-select: none;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

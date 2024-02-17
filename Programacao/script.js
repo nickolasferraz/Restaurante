@@ -35,5 +35,15 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollContainer.scrollLeft += 10; // Valor arbitrário para a quantidade de rolagem horizontal
       }
     });
+    scrollContainer.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+      scrollLeft = scrollContainer.scrollLeft;
+    });
+    
+    scrollContainer.addEventListener("touchmove", (e) => {
+      const x = e.touches[0].clientX;
+      const walk = (x - startX) * 2;
+      scrollContainer.scrollLeft = scrollLeft - walk;
+    });
   });
   
