@@ -34,7 +34,7 @@ function CardProduto({ imagem, titulo, descricao, preco }) {
     return elemento;
   }
   
-
+  
   const cardProduto = CardProduto({
     imagem: "img_web/imagem mexicanas/tacos/taco americano.PNG",
     titulo: "Taco Shell",
