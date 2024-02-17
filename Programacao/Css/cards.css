@@ -58,8 +58,11 @@
     transform:translateY(-5px);
 
 }
-.card--produtos p{
+.card--produtos p.card--produtos--descricao {
     color: #333;
+    white-space: normal;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
     font-size: 0.8rem;
 }
 .card--produtos--imagem {
@@ -96,11 +99,3 @@ hr {
   border-radius: 5px;
 }
 
-
-.card--produtos--preco span {
-  font-size: 15px;
-  /* color: greenyellow; */
-  /* background-color: #333; */
-  padding: 3px;
-  border-radius: 3px;
-}
