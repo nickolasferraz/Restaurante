@@ -19,7 +19,7 @@ function CardProduto({ imagem, titulo, descricao, preco }) {
   
     const precoElemento = document.createElement('h3');
     precoElemento.classList.add('card--produtos--preco');
-    precoElemento.textContent = `preço: R$ ${preco}`;
+    precoElemento.textContent = `${preco}R$`;
   
     const botao = document.createElement('button');
     botao.innerHTML = '<i class="fa-solid fa-cart-shopping"></i>';
