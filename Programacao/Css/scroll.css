@@ -1,6 +1,6 @@
 .scroll--button {
   position: fixed;
-  margin-top: auto;
+  margin-top: 10vw;
   transition: all 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
