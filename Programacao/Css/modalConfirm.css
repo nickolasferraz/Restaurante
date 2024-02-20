@@ -1,0 +1,38 @@
+.modal-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: 3px solid #3bb54a;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.modal-container h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.modal-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.modal-container button {
+    background-color: #333;
+    color: #FFCD0D;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    padding: 10px 20px;
+    margin: 10px 0; /* Adiciona espaçamento em cima e embaixo */
+}
+.modal-container button:hover {
+    cursor: pointer;
+    background-color: #FFCD0D;
+    color: #333;
+}
