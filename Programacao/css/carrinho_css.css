@@ -15,7 +15,6 @@
     font-weight: bold;
     border-radius: 5px;
     margin-top: 50px;
-    /* Adicionado z-index alto para sobrepor os cards */
     z-index: 999;
   }  
   
@@ -31,12 +30,12 @@
   
   .row--carrinho {
     display: grid;
-    grid-template-columns: repeat(3, 300px); /* Define 4 colunas */
+    grid-template-columns: repeat(3, 300px);
     grid-gap: 10px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row; /* Força o layout horizontal */
+    flex-direction: row;
   }
   
   .card--produtos--carrinho {
@@ -45,8 +44,8 @@
     background-color: rgb(255, 255, 255);
     padding: 20px;
     margin: 10px;
-    width: 250px; /* Largura ajustada para o formato horizontal */
-    height: 200px; /* Altura ajustada para o formato horizontal */
+    width: 250px;
+    height: 200px;
     transition: all 0.3s ease-out;
     position: relative;
     border: 3px solid #3bb54a;
@@ -131,9 +130,24 @@
 }
 
 .card--produtos--carrinho .quantidade input {
-  width: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   text-align: center;
-  border: 1px solid #ddd;
+  appearance: none;
+  width: 40px;
+  padding: 5px;
+}
+
+.card--produtos--carrinho .quantidade input::-webkit-inner-spin-button,
+.card--produtos--carrinho .quantidade input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.card--produtos--carrinho .quantidade input::-moz-inner-spin-button,
+.card--produtos--carrinho .quantidade input::-moz-outer-spin-button {
+  -moz-appearance: none;
+  margin: 0;
 }
 
 .card--produtos--carrinho .remover {
@@ -192,3 +206,4 @@
   background-color: #FFCD0D;
   color: #333;
 }
+

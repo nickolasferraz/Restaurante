@@ -9,8 +9,6 @@ const confirmarCompra = (produto) => {
     </div>
   `;
 
-
-
   document.body.appendChild(modal);
 
   modal.showModal();
@@ -30,7 +28,7 @@ const confirmarCompra = (produto) => {
 });
 };
 
-const botoesCarrinho = document.querySelectorAll('.card--produtos button');
+const botoesCarrinho = document.querySelectorAll('.card--produtos .add--cart--button');
 
 for (const botao of botoesCarrinho) {
     botao.addEventListener('click', () => {
