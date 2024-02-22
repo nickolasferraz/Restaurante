@@ -44,38 +44,48 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
   background-image:linear-gradient(180deg,rgba(0,0,0,0.8)70%,rgba(137, 43, 226, 0.788)), url('./Programacao/imagens_fondo/comida-mexicana-1664393072089_v2_4x3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 0px 0;
+  
 }
 .burritos--secao{
   /* position: relative; */
   width: 100%;
   /* height: 100vh; */
   background-image:var(--gradient);
-  padding: 0px 0;
+  padding: 0px ;
+  overflow-x: hidden;
   
 }
 .Experimente--secoes{
   width: 100vw;
   padding: 0px 0;
   background-image: var(--reverse-gradient);
-
+  padding: 0px ;
+  overflow-x: hidden;
 }
 .onda{
-  width: 100%;
+  width: 100vw;
   height: 100px;
   position: relative;
   bottom: 0;
-  background-image: url(Programacao/imagens/onda.png);
+  background-image: url(Programacao/imagens/ondaAmarela.png);
+  overflow-y: hidden;
   background-size: 1000px 100px;
+  padding: 0px ;
+
   
 }
 .onda--reverse{
-  width: 100%;
+  width: 100vw;
   height: 100px;
   position: absolute;
   /* align-items:start; */
   bottom: 1;
-  background-image: url(Programacao/imagens/onda_reverse.png);
+  background-image: url(Programacao/imagens/ondaAmarela-reverse.png);
   background-size: 1000px 100px;
+  padding: 0px ;
+  overflow-y: hidden;
+ 
   
 }
 #onda1{
@@ -83,23 +93,24 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
   opacity: 1;
   background-position-x: 400px;
   
+  
 }
 #onda2{
   z-index: 1000;
   opacity: 1;
-  background-position-x: 300px;
+  background-position-x: 400px;
   
   
 }
 #onda3{
   z-index: 1000;
   opacity: 1;
-  background-position-x: 300px;
+  background-position-x: 400px;
   
 }
 #onda4{
   z-index: 1000;
-  opacity: 0.8;
+  opacity: 1;
   background-position-x: 100px;
   
 }
