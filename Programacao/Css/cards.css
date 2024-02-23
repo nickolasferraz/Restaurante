@@ -14,9 +14,8 @@
 
 /* Efeito hover no card */
 .card--produtos:hover {
-  background-color: #FFCD0D;
   opacity: 1;
-  transition: 1.8s;
+  
 }
 
 /* Botão de adicionar ao carrinho */
@@ -38,6 +37,7 @@
 .card--produtos .add--cart--button:hover {
   cursor: pointer;
   background-color: #208f3c;
+  
 }
 
 /* Estilo do container principal */

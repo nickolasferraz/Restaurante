@@ -8,7 +8,7 @@ body{
     padding-top: 8vh;
     justify-content: start;
     align-items: center;
-    background-color: blueviolet;
+    background-color: #8a2be2;
     font-family: 'krop 2', Times, serif;
     gap: 16px;
     overflow-x: hidden;
@@ -35,8 +35,8 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
   --reverse-gradient:linear-gradient(
     180deg,
     rgba(2, 255, 2, 0.767),
-    rgba(210, 180, 140, 0.6),
-    rgba(137, 43, 226, 0.3)); 
+    rgb(255, 255, 255),
+    rgba(250, 0, 33, 0.884)); 
 }
 
 .tacos--secao{
@@ -60,18 +60,20 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
   width: 100vw;
   padding: 0px 0;
   background-image: var(--reverse-gradient);
+  background-repeat:no-repeat;
   padding: 0px ;
   overflow-x: hidden;
 }
-.onda{
+/* .onda{
   width: 100vw;
   height: 100px;
   position: relative;
   bottom: 0;
-  background-image: url(Programacao/imagens/ondaAmarela.png);
+  background-image: url(Programacao/imagens/onda.png);
   overflow-y: hidden;
   background-size: 1000px 100px;
   padding: 0px ;
+  background-repeat:repeat;
 
   
 }
@@ -80,18 +82,18 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
   height: 100px;
   position: absolute;
   /* align-items:start; */
-  bottom: 1;
-  background-image: url(Programacao/imagens/ondaAmarela-reverse.png);
+  /* bottom: 1;
+  background-image: url(Programacao/imagens/ondareverse.png);
   background-size: 1000px 100px;
   padding: 0px ;
   overflow-y: hidden;
  
   
-}
-#onda1{
+} */
+/* #onda1{
   z-index: 1000;
   opacity: 1;
-  background-position-x: 400px;
+  background-position-x: 300px;
   
   
 }
@@ -120,7 +122,7 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
   background-position-x: 300px;
   
   
-}
+} */
   /* background-image:linear-gradient(to left,rgba(2, 255, 2, 0.767),rgba(210, 180, 140, 0.6),rgba(137, 43, 226, 0.3));
   background-size: 500% 100%;
   animation: degrade-animado 5s infinite alternate ;
