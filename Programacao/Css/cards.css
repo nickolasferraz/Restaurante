@@ -65,6 +65,7 @@
   word-wrap: break-word;
   text-overflow: ellipsis;
   font-size: 0.8rem;
+  height: 75px;
 }
 
 /* Imagem do produto */
