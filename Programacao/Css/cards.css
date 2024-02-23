@@ -8,14 +8,12 @@
   margin: 20px;
   width: 200px;
   height: 400px;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
   border: 3px solid #3bb54a;
 }
 
-/* Efeito hover no card */
-.card--produtos:hover {
-  opacity: 1;
-  
+.card--produtos:hover{
+  transform: translateY(-5px);
 }
 
 /* Botão de adicionar ao carrinho */
