@@ -1,7 +1,6 @@
-const confirmarCompra = (produto) => {
-  const botaoClicado = event.target;
-  const cardProdutoElemento = botaoClicado.closest('.card--produtos');
-  const tituloProduto = cardProdutoElemento.querySelector('h2').textContent;
+const confirmarCompra = function(event) {
+  const tituloProduto = event.target.closest('.card--produtos').querySelector('h2').textContent;
+
 
     const modal = document.createElement('dialog');
     modal.innerHTML = `
@@ -34,10 +33,5 @@ const confirmarCompra = (produto) => {
   const botoesCarrinho = document.querySelectorAll('.card--produtos .add--cart--button');
 
   for (const botao of botoesCarrinho) {
-      botao.addEventListener('click', () => {
-          const produto = {
-              nome: "ItemTeste",
-          };
-          confirmarCompra(produto);
-      });
+    botao.addEventListener('click', confirmarCompra.bind(botao));
   }
