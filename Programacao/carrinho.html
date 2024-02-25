@@ -1,86 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho</title>
-    <link rel="stylesheet" href="css/carrinho_css.css">
-    <link rel="stylesheet" href="css/nav_bar.css">
-    <link rel="stylesheet" href="Css/global.css">
-</head>
-<body>
-  <header>
-          <div class="nav-bar">
-            <nav>
-              <a href="/Programacao/home.html" class="logo"><img src="img/Logo.png" alt="logo" /></a>
-              <ul class="nav-list">
-                <li><a href="/Programacao/home.html">Home</a></li>
-                <li><a href="/Programacao/Pag_cardapio.html">Cardápio</a></li>
-                <li><a href="/Programacao/Pg_Sobremesa.html">Sobremesas</a></li>
-                <li><a href="/Programacao/bebidas_pag.html">Bebidas</a></li>
-              </ul>
-              <ul class="navbar--cart">
-                <li>
-                  <a href="/Programacao/carrinho.html"><ion-icon name="cart-outline" class="nav--cart--icon"></ion-icon>
-                  </a>
-                  <span class="cart--quantidade">0</span>
-                </li>
-              </ul>
-            </nav>
-          </div>
-  
-         <body>
 
-            <div class="numero-mesa-externo">
-              Mesa: 12
-            </div>
-      
-            <main>
-              <section class="titulo--secoes--carrinho">
-                <h2>Seu Carrinho</h2>
-              </section>
-      
-              <section class="row--carrinho">
-                <div class="card--produtos--carrinho">
-                  <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco" class="card--produtos--carrinho--imagem">
-                  <div class="card_titulo">
-                    <h3>Taco Shell</h3>
-                  </div>
-                  <h3 class="preco">R$ 10,00</h3>
-                  <div class="quantidade">
-                    <button class="diminuir">-</button>
-                    <input type="number" value="1" class="input--personalizado">
-                    <button class="aumentar">+</button>
-                  </div>
-                  <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
-                </div>
-                <div class="card--produtos--carrinho">
-                  <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco" class="card--produtos--carrinho--imagem">
-                  <div class="card_titulo">
-                    <h3>Taco Shell</h3>
-                  </div>
-                  <h3 class="preco">R$ 10,00</h3>
-                  <div class="quantidade">
-                    <button class="diminuir">-</button>
-                    <input type="number" value="1" class="input--personalizado">
-                    <button class="aumentar">+</button>
-                  </div>
-                  <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
-                </div>
-                <div class="card--produtos--carrinho">
-                  <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco" class="card--produtos--carrinho--imagem">
-                  <div class="card_titulo">
-                    <h3>Taco Shell</h3>
-                  </div>
-                  <h3 class="preco">R$ 10,00</h3>
-                  <div class="quantidade">
-                    <button class="diminuir">-</button>
-                    <input type="number" value="1" class="input--personalizado">
-                    <button class="aumentar">+</button>
-                  </div>
-                  <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
-                </div>
-                <!-- <div class="card--produtos--carrinho">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho</title>
+  <link rel="stylesheet" href="css/carrinho_css.css">
+  <link rel="stylesheet" href="css/nav_bar.css">
+  <link rel="stylesheet" href="Css/global.css">
+  <script src="componente-navbar.js" defer></script>
+</head>
+
+<!-- nav bar inserida com js !! -->
+<div class="nav-bar"></div>
+
+
+<body>
+
+  <div class="numero-mesa-externo">
+    Mesa: 12
+  </div>
+
+  <main>
+    <section class="titulo--secoes--carrinho">
+      <h2>Seu Carrinho</h2>
+    </section>
+
+    <section class="row--carrinho">
+      <div class="card--produtos--carrinho">
+        <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco"
+          class="card--produtos--carrinho--imagem">
+        <div class="card_titulo">
+          <h3>Taco Shell</h3>
+        </div>
+        <h3 class="preco">R$ 10,00</h3>
+        <div class="quantidade">
+          <button class="diminuir">-</button>
+          <input type="number" value="1" class="input--personalizado">
+          <button class="aumentar">+</button>
+        </div>
+        <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
+      </div>
+      <div class="card--produtos--carrinho">
+        <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco"
+          class="card--produtos--carrinho--imagem">
+        <div class="card_titulo">
+          <h3>Taco Shell</h3>
+        </div>
+        <h3 class="preco">R$ 10,00</h3>
+        <div class="quantidade">
+          <button class="diminuir">-</button>
+          <input type="number" value="1" class="input--personalizado">
+          <button class="aumentar">+</button>
+        </div>
+        <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
+      </div>
+      <div class="card--produtos--carrinho">
+        <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco"
+          class="card--produtos--carrinho--imagem">
+        <div class="card_titulo">
+          <h3>Taco Shell</h3>
+        </div>
+        <h3 class="preco">R$ 10,00</h3>
+        <div class="quantidade">
+          <button class="diminuir">-</button>
+          <input type="number" value="1" class="input--personalizado">
+          <button class="aumentar">+</button>
+        </div>
+        <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
+      </div>
+      <!-- <div class="card--produtos--carrinho">
                   <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco" class="card--produtos--carrinho--imagem">
                   <div class="card_titulo">
                     <h3>Taco Shell</h3>
@@ -93,51 +82,51 @@
                   </div>
                   <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
                 </div> -->
-                <div class="card--produtos--carrinho">
-                  <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco" class="card--produtos--carrinho--imagem">
-                  <div class="card_titulo">
-                    <h3>Taco Shell</h3>
-                  </div>
-                  <h3 class="preco">R$ 10,00</h3>
-                  <div class="quantidade">
-                    <button class="diminuir">-</button>
-                    <input type="number" value="1" class="input--personalizado">
-                    <button class="aumentar">+</button>
-                  </div>
-                  <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
-                </div>
-                <div class="card--produtos--carrinho">
-                  <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco" class="card--produtos--carrinho--imagem">
-                  <div class="card_titulo">
-                    <h3>Taco Shell</h3>
-                  </div>
-                  <h3 class="preco">R$ 10,00</h3>
-                  <div class="quantidade">
-                    <button class="diminuir">-</button>
-                    <input type="number" value="1" class="input--personalizado">
-                    <button class="aumentar">+</button>
-                  </div>
-                  <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
-                </div>
-                
-              
-              </section>
-      
-              <section class="resumo">
-                <!-- <span class="total-itens">2 itens</span> -->
-                <span class="total-valor">Total: R$ 25,00</span>
-                <button class="botao-checkout">Finalizar Compra</button>
-              </section>
+      <div class="card--produtos--carrinho">
+        <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco"
+          class="card--produtos--carrinho--imagem">
+        <div class="card_titulo">
+          <h3>Taco Shell</h3>
+        </div>
+        <h3 class="preco">R$ 10,00</h3>
+        <div class="quantidade">
+          <button class="diminuir">-</button>
+          <input type="number" value="1" class="input--personalizado">
+          <button class="aumentar">+</button>
+        </div>
+        <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
+      </div>
+      <div class="card--produtos--carrinho">
+        <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco"
+          class="card--produtos--carrinho--imagem">
+        <div class="card_titulo">
+          <h3>Taco Shell</h3>
+        </div>
+        <h3 class="preco">R$ 10,00</h3>
+        <div class="quantidade">
+          <button class="diminuir">-</button>
+          <input type="number" value="1" class="input--personalizado">
+          <button class="aumentar">+</button>
+        </div>
+        <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
+      </div>
 
-            </main>
-    
-        </body>
 
-</html>
+    </section>
 
-        <!-- ícones -->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <section class="resumo">
+      <!-- <span class="total-itens">2 itens</span> -->
+      <span class="total-valor">Total: R$ 25,00</span>
+      <button class="botao-checkout">Finalizar Compra</button>
+    </section>
+
+  </main>
+</body>
+
+<!-- ícones -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>
