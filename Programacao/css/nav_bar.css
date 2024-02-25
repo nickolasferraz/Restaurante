@@ -3,11 +3,9 @@
   padding: 0;
 }
 
-.nav-bar a {
-  gap: 1rem;
+.nav-bar a, .navbar--cart a {
   color: rgb(24, 23, 23);
   text-decoration: none;
-
 }
 
 .logo img {
@@ -16,8 +14,16 @@
 }
 
 
-.nav-bar nav {
-  z-index: 9999;
+.cart--quantidade {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  user-select: none;
+  padding: 7px 11px 0px 2px;
+  margin-top: 5px;
+  width: 2px;
+}
+
+.nav-bar nav, .navbar--cart nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -29,25 +35,25 @@
   width: 100%;
 }
 
-
-.nav-list {
+.nav-list, .navbar--cart li {
   list-style: none;
   display: flex;
 }
 
-.nav-list li {
+.nav-list li, .navbar--cart li {
   padding: 2px;
   cursor: pointer;
   border-radius: 8px;
-  letter-spacing: 3px;
-  margin-left: 32px;
+  letter-spacing: 2px;
+  margin-left: 20px;
 }
 
-.nav-bar a ion-icon {
+.navbar--cart a ion-icon {
+  margin-top: 5px;
   font-size: 25px;
 }
 
-.nav-list li:hover {
+.nav-list li:hover, .navbar--cart li:hover {
   color: #0e123b;
   box-shadow: 0 0 2px #2b3824;
   transform: scale(1.1);
