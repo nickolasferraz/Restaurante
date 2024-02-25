@@ -31,7 +31,6 @@ const produtos = [
   },
 ];
 
-const rowElemento = document.querySelector(".row");
 const produtosElemento = document.getElementById("produtos");
 
 produtos.forEach((produto) => {
@@ -40,111 +39,24 @@ produtos.forEach((produto) => {
 });
 
 function CardProduto({ imagem, titulo, descricao, preco }) {
-  
   const elemento = document.createElement('div');
   elemento.classList.add('card--produtos');
 
-  const imagemElemento = document.createElement('img');
-  imagemElemento.classList.add('card--produtos--imagem');
-  imagemElemento.src = imagem;
-  imagemElemento.alt = titulo;
-
-  const tituloElemento = document.createElement('h2');
-  tituloElemento.textContent = titulo;
-
-  const hr = document.createElement('hr');
-
-  const descricaoElemento = document.createElement('p');
-  descricaoElemento.textContent = descricao;
-  descricaoElemento.classList.add('card--produtos--descricao');
-
-  const precoElemento = document.createElement('h3');
-  precoElemento.classList.add('card--produtos--preco');
-  precoElemento.textContent = `${preco}R$`;
-
-  const botao = document.createElement('button');
-  botao.innerHTML = '<i class="fa-solid fa-cart-shopping"></i>';
-  botao.classList.add('add--cart--button');
-
-  const quantidadeElemento = document.createElement('div');
-  quantidadeElemento.classList.add('quantidade');
-
-  const diminuirBotao = document.createElement('button');
-  diminuirBotao.classList.add('diminuir');
-  diminuirBotao.textContent = '-';
-
-  const quantidadeInput = document.createElement('input');
-  quantidadeInput.type = 'number';
-  quantidadeInput.value = 1;
-  quantidadeInput.classList.add('input--personalizado');
-
-  const aumentarBotao = document.createElement('button');
-  aumentarBotao.classList.add('aumentar');
-  aumentarBotao.textContent = '+';
-
-  quantidadeElemento.appendChild(diminuirBotao);
-  quantidadeElemento.appendChild(quantidadeInput);
-  quantidadeElemento.appendChild(aumentarBotao);
-
-  elemento.appendChild(imagemElemento);
-  elemento.appendChild(tituloElemento);
-  elemento.appendChild(hr);
-  elemento.appendChild(descricaoElemento);
-  elemento.appendChild(precoElemento);
-  elemento.appendChild(botao);
-  elemento.appendChild(quantidadeElemento);
-
-  quantidadeInput.addEventListener('change', () => {
-    const quantidade = parseInt(quantidadeInput.value);
-    if (quantidade < 1) {
-      quantidadeInput.value = 1;
-    }
-  });
-
-  diminuirBotao.addEventListener('click', () => {
-    const quantidade = parseInt(quantidadeInput.value);
-    if (quantidade > 1) {
-      quantidadeInput.value = quantidade - 1;
-    }
-  });
-
-  aumentarBotao.addEventListener('click', () => {
-    const quantidade = parseInt(quantidadeInput.value);
-    quantidadeInput.value = quantidade + 1;
-  });
-
-  botao.addEventListener('click', () => {
-    confirmarCompra(titulo);
-  });
-  
-  return elemento;
-}
-
-function confirmarCompra(titulo) {
-  const modal = document.createElement('dialog');
-  modal.innerHTML = `
-    <div class="modal-container">
-      <h2>Confirmação de compra</h2>
-      <p>Você adicionou ${titulo} ao carrinho!</p>
-      <button id="confirmar-compra">Confirmar</button>
+  const html = `
+    <img src="${imagem}" alt="${titulo}" class="card--produtos--imagem">
+    <h2>${titulo}</h2>
+    <hr>
+    <p class="card--produtos--descricao">${descricao}</p>
+    <h3 class="card--produtos--preco">${preco}R$</h3>
+    <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
+    <div class="quantidade">
+      <button class="diminuir">-</button>
+      <input type="number" value="1" class="input--personalizado">
+      <button class="aumentar">+</button>
     </div>
   `;
 
-  document.body.appendChild(modal);
+  elemento.innerHTML = html;
 
-  modal.showModal();
-
-  setTimeout(() => {
-    modal.close();
-  }, 2500); 
-
-
-  modal.addEventListener('click', (event) => {
-    const target = event.target;
-
-    if (target.id === 'confirmar-compra') {
-
-      modal.close();
-    }
-  });
+  return elemento;
 }
