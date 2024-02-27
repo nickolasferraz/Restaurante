@@ -20,4 +20,22 @@ header.innerHTML = `
         </ul>
 ` 
 
+const navLinks = header.querySelectorAll('.nav-list a');
+
+function destaquePaginaAtual() {
+  const paginaAtual = window.location.pathname;
+
+  for (const link of navLinks) {
+    const href = link.getAttribute('href');
+
+    if (href && href.endsWith(paginaAtual)) {
+      link.style.textDecoration = "underline"
+    }
+  }
+}
+
+
+window.addEventListener('load', destaquePaginaAtual);
+window.addEventListener('popstate', destaquePaginaAtual);
+
 navbar.appendChild(header);
