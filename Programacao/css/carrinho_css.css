@@ -169,7 +169,7 @@
   justify-content: flex-end;
   gap: 30px;
   padding: 15px;
-  background-color: #61bb0d;
+  background-color: #FFCD0D;
   border-radius: 5px;
   color: #333;
 }
@@ -182,7 +182,7 @@
 
 .botao-checkout {
   background-color: #333;
-  color: #FFCD0D;
+  color: #5aff0d;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 5px;
@@ -192,7 +192,7 @@
 
 .botao-checkout:hover {
   cursor: pointer;
-  background-color: #FFCD0D;
+  background-color: #5aff0d;
   color: #333;
 }
 
