@@ -26,17 +26,10 @@
   background-color: #FFCD0D;
   color: #333;
   font-size: 1rem;
-  font-weight: bold;
   transition: all 0.3s ease-out;
   border-radius: 5px;
-  font-family: 'krop 2';
 }
 
-.card--produtos .add--cart--button:hover {
-  cursor: pointer;
-  background-color: #208f3c;
-  
-}
 
 /* Estilo do container principal */
 .row, #produtos {
@@ -52,7 +45,6 @@
   position: absolute;
   margin-left: 85px;
   font-size: 1.2rem;
-  font-weight: bold;
   color: #333;
 }
 
@@ -98,7 +90,6 @@ hr {
   height: 30px;
   color: rgb(2, 2, 2);
   font-size: 1rem;
-  font-weight: bold;
   transition: all 0.3s ease-out;
   border-radius: 5px;
   font-family: 'krop 2';
@@ -127,8 +118,12 @@ hr {
 .card--produtos .quantidade button {
   width: 25px;
   height: 25px;
-  border: 1px solid #ddd;
   font-size: 16px;
+}
+
+.card--produtos button:hover{
+  background-color: #333;
+  color: #FFCD0D;
 }
 
 /* Estilo do input dentro do container de quantidade */
