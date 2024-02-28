@@ -63,6 +63,7 @@
   width: 200px;
   height: 250px;
   border-radius: 3px;
+  object-fit: cover;
 }
 
 /* Título do card */
