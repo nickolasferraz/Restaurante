@@ -1,49 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let scrollContainer = document.querySelector(".slide_conteiner_2");
-    let isDragging = false;
-    let startX;
-    let scrollLeft;
-  
-    scrollContainer.addEventListener("mousedown", (e) => {
-      isDragging = true;
-      startX = e.pageX - scrollContainer.offsetLeft;
-      scrollLeft = scrollContainer.scrollLeft;
+'use strict';
+const tabs = document.querySelectorAll('[data-id]');
+const contents = document.querySelectorAll('[data-content]');
+let id = 0;
+
+tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+        tabs[id].classList.remove('active');
+        tab.classList.add('active');
+        id = tab.getAttribute('data-id');
+        contents.forEach(function (box) {
+            box.classList.add('hide');
+            if (box.getAttribute('data-content') == id){
+                box.classList.remove('hide');
+                box.classList.add('show');
+            }
+        });
     });
-  
-    document.addEventListener("mouseup", () => {
-      isDragging = false;
-    });
-  
-    document.addEventListener("mouseleave", () => {
-      isDragging = false;
-    });
-  
-    document.addEventListener("mousemove", (e) => {
-      if (!isDragging) return;
-      const x = e.pageX - scrollContainer.offsetLeft;
-      const walk = (x - startX) * 2; // Ajuste este valor para personalizar a sensibilidade do scroll
-      scrollContainer.scrollLeft = scrollLeft - walk;
-    });
-  
-    scrollContainer.addEventListener("scroll", function () {
-      // Se estiver arrastando manualmente, não faz nada
-      if (isDragging) return;
-  
-      // Verifica se o usuário está próximo ao final da página horizontal
-      if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth - 100) {
-        // Ajuste o valor "100" conforme necessário para personalizar quando a rolagem ocorre
-        scrollContainer.scrollLeft += 10; // Valor arbitrário para a quantidade de rolagem horizontal
-      }
-    });
-    scrollContainer.addEventListener("touchstart", (e) => {
-      startX = e.touches[0].clientX;
-      scrollLeft = scrollContainer.scrollLeft;
-    });
-    
-    scrollContainer.addEventListener("touchmove", (e) => {
-      const x = e.touches[0].clientX;
-      const walk = (x - startX) * 2;
-      scrollContainer.scrollLeft = scrollLeft - walk;
-    });
-  });
-  
+});
