@@ -64,16 +64,18 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
   padding: 0px ;
   overflow-x: hidden;
 }
-/* .Bebidas--pag{
+.Bebidas--pag{
   width: 100vw;
   height: 100vh;
   padding: 0px 0;
-  background-image: url('./Programacao/imagens_fondo/cervezas.jpg');
+  margin: 0;
+  background-image:linear-gradient(180deg,rgba(0,0,0,0.8)70%,rgba(137, 43, 226, 0.788)), url('./Programacao/imagens_fondo/fundo_florido1.png');
   background-repeat:no-repeat;
-  padding: 0px ;
+  background-size: cover;
+  
   overflow-x: hidden;
   object-fit: cover;
-} */
+}
 /* .onda{
   width: 100vw;
   height: 100px;
