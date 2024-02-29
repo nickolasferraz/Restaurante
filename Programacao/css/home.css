@@ -263,3 +263,20 @@ img.destaques--img {
         opacity: 1;
     }
 }
+
+.box {
+    border: 2px solid #2a3cad;
+    animation: neon-pulse 2s infinite;
+  }
+  
+  @keyframes neon-pulse {
+    0% {
+      border-color: #2a3cad;
+    }
+    50% {
+      border-color: #f0a591;
+    }
+    100% {
+      border-color: #2a3cad;
+    }
+  }
