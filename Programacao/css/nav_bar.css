@@ -9,6 +9,10 @@
   width: 50px;
 }
 
+.nav-bar a {
+  font-size: 17px;
+}
+
 
 .cart--quantidade {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
