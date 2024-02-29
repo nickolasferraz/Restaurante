@@ -1,4 +1,3 @@
-'use strict';
 const tabs = document.querySelectorAll('[data-id]');
 const contents = document.querySelectorAll('[data-content]');
 let id = 0;
