@@ -1,4 +1,8 @@
-
+body {
+  background-size: cover;
+  background-image:  url('https://t3.ftcdn.net/jpg/04/19/68/46/360_F_419684678_BbKX7Fe1qMnX9n9Hbk99jKHTue6okhom.jpg') ;
+  background-repeat:no-repeat;
+}
   /* Número da mesa */
   .numero-mesa-externo {
     -webkit-box-shadow: -2px 3px 25px 2px rgba(0,0,0,0.74);
