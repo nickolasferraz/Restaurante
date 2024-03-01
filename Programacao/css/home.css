@@ -33,14 +33,7 @@ section .main .main_image img {
     left: 25px;
 }
 
-
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #a31919;
-} */
+/* menu da paginha home das opções recomendadas */
 
 .container{
 position: relative;
@@ -93,12 +86,7 @@ grid-gap: 15px;
 }
 p.produtos--descricao, p.produtos--descricao--vert{
     display: grid;
-    /* position: relative; */
-    /* grid-row: end; */
-    color: #2dfd03;
-    /* white-space: normal; */
-    /* word-wrap: break-word; */
-    /* text-overflow: ellipsis; */
+    color: #ffb700;
     font-size: 2rem;
     height: 100%;
     text-align: center;
@@ -212,6 +200,7 @@ img.destaques--img {
     width: 50%;
     height: 500px;
     border-radius: 10px;
+    object-fit: cover;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;

@@ -34,9 +34,9 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
 :root{
   --reverse-gradient:linear-gradient(
     180deg,
-    rgba(2, 255, 2, 0.767),
-    rgb(255, 255, 255),
-    rgba(250, 0, 33, 0.884)); 
+    rgba(255, 124, 2, 0.767),
+    rgb(241, 205, 2),
+    rgba(255, 124, 2, 0.767)); 
 }
 
 .tacos--secao{
