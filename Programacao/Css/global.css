@@ -26,10 +26,10 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
 :root{
   --gradient: linear-gradient(
     180deg,
-    rgba(137, 43, 226, 0.788),
-    rgba(210, 180, 140, 0.6),
-    rgba(2, 255, 2, 0.767)
-    )
+    rgb(138, 43, 226),
+    rgb(241, 205, 2),
+    rgba(255, 124, 2, 0.767)
+    );
 }
 :root{
   --reverse-gradient:linear-gradient(
@@ -41,7 +41,7 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
 
 .tacos--secao{
   width: 100vw;
-  background-image:linear-gradient(180deg,rgba(0,0,0,0.8)70%,rgba(137, 43, 226, 0.788)), url('./Programacao/imagens_fondo/comida-mexicana-1664393072089_v2_4x3.jpg');
+  background-image:linear-gradient(180deg,rgba(0,0,0,0.8)70%,rgb(138, 43, 226)), url('./Programacao/imagens_fondo/comida-mexicana-1664393072089_v2_4x3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0px 0;
@@ -51,7 +51,7 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
   /* position: relative; */
   width: 100%;
   /* height: 100vh; */
-  background-image:var(--gradient);
+  background-image: var(--gradient);
   padding: 0px ;
   overflow-x: hidden;
   
@@ -59,8 +59,8 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
 .Experimente--secoes{
   width: 100vw;
   padding: 0px 0;
-  background-image: var(--reverse-gradient);
-  background-repeat:no-repeat;
+  background-image: url("Programacao/imagens_fondo/imagenFundo-tranparente.png");
+  background-repeat:repeat;
   padding: 0px ;
   overflow-x: hidden;
 }

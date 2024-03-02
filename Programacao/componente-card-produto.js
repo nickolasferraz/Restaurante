@@ -12,16 +12,35 @@ const produtos = [
     preco: 12.75,
   },
   {
-    imagem: "img_web/imagem mexicanas/tacos/veegie2.jpg",
-    titulo: "Taco vegetariano",
-    descricao: "Otima opção de taco vegetariano. tortilha de milho frita receada de carne de jaca com alface fresco e tomate.",
-    preco: 9.48,
+    imagem: "img_web/imagem mexicanas/tacos/tacos-camarao1.jpg",
+    titulo: "Taco de Camarão",
+    descricao: "A verdadeira perfeição: taco de camarão frito acompanhado por cream cheese, gorgonzola e abóbora. Uma explosão de sabores e texturas em cada mordida",
+    preco: 14.95,
   },  
   {
     imagem: "img_web/imagem mexicanas/um-taco-que-tem-carne_873925-20284.avif",
     titulo: "Taco tradicional",
     descricao: "Os verdadeiros Tacos Mexicanos! Tortillas de milho frescas (não são as tortillas crocantes).",
     preco: 5.49,
+  },
+  
+  {
+    imagem: "img_web/imagem mexicanas/tacos/taco-frito.webp",
+    titulo: "Taco Crocante",
+    descricao: "Um taco frito com uma crocante camada de queijo acompanhado por carne bovina moida, catupiry e salada de alface e tomate picado.",
+    preco: 14.95,
+  },
+  {
+    imagem: "img_web/imagem mexicanas/tacos/taco-feijao1.jpg",
+    titulo: "Taco de feijão loko",
+    descricao: "Uma opção vegetariana, que acompanha feijão mexicano temperado com arroz cremoso e milho, abacate picado  cream cheese.",
+    preco: 14.95,
+  },
+  {
+    imagem: "img_web/imagem mexicanas/tacos/veegie2.jpg",
+    titulo: "Taco vegetariano",
+    descricao: "Otima opção de taco vegetariano. tortilha de milho frita receada de carne de jaca com alface fresco e tomate.",
+    preco: 9.48,
   },
   {
     imagem: "img_web/imagem mexicanas/tacos/monte seu taco.jpg",
