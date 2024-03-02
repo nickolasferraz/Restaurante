@@ -76,6 +76,30 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
   overflow-x: hidden;
   object-fit: cover;
 }
+.nao-alcoolicas--pag{
+  width: 100vw;
+  /* height: 100vh; */
+  padding: 0px 0;
+  margin: 0;
+  background-image:linear-gradient(180deg,rgba(137, 43, 226, 0.788)5vh,rgba(0,0,0,0.8)90vh,rgb(137, 43, 226)), url('./Programacao/imagens_fondo/caveira-roxa.jpg');
+  background-repeat:no-repeat; 
+  background-size: cover;
+  background-position: -5px center;
+  overflow-x: hidden;
+  object-fit: cover;
+}
+.cervejas--pag{
+  width: 100vw;
+  /* height: 100vh; */
+  padding: 0px 0;
+  margin: 0;
+  background-image:linear-gradient(180deg,rgba(137, 43, 226, 0.788)5vh,rgba(0,0,0,0.8)50vh,rgb(173, 0, 241));
+  background-repeat:no-repeat; 
+  background-size: cover;
+  background-position: -5px center;
+  overflow-x: hidden;
+  object-fit: cover;
+}
 /* .onda{
   width: 100vw;
   height: 100px;
