@@ -14,7 +14,7 @@ header.innerHTML = `
         <ul class="navbar--cart">
             <li>
                 <a href="/Programacao/carrinho.html"><ion-icon name="cart-outline" class="nav--cart--icon"></ion-icon>
-                <span class="cart--quantidade">0</span>
+                <span class="cart--quantidade">0 itens</span>
                 </a>
             </li>
         </ul>
