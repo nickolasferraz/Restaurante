@@ -2,7 +2,7 @@
 .card--produtos {
   position: relative;
   border-radius: 5px;
-  box-shadow: 7px 7px 13px 0 rgba(50,50,50, 0.22);
+  box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
   background-color: #fff;
   padding: 20px;
   margin: 20px;
@@ -12,7 +12,7 @@
   border: 3px solid #3bb54a;
 }
 
-.card--produtos:hover{
+.card--produtos:hover {
   transform: translateY(-5px);
 }
 
@@ -23,16 +23,16 @@
   margin-left: 160px;
   width: 50px;
   padding: 3px;
-  background-color: #FFCD0D;
+  background-color: #ffcd0d;
   color: #333;
   font-size: 1rem;
   transition: all 0.3s ease-out;
   border-radius: 5px;
 }
 
-
 /* Estilo do container principal */
-.row, #produtos {
+.row,
+#produtos {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,14 +86,15 @@ hr {
 }
 
 /* Estilo do input de quantidade */
-.quantidade .aumentar, .diminuir {
-  background-color: #FFCD0D;
+.quantidade .aumentar,
+.diminuir {
+  background-color: #ffcd0d;
   height: 30px;
   color: rgb(2, 2, 2);
   font-size: 1rem;
   transition: all 0.3s ease-out;
   border-radius: 5px;
-  font-family: 'krop 2';
+  font-family: "krop 2";
 }
 
 .card--produtos button:hover {
@@ -114,7 +115,6 @@ hr {
   margin-left: -12px;
 }
 
-
 /* Estilo dos botões dentro do container de quantidade */
 .card--produtos .quantidade button {
   width: 25px;
@@ -122,9 +122,9 @@ hr {
   font-size: 16px;
 }
 
-.card--produtos button:hover{
+.card--produtos button:hover {
   background-color: #333;
-  color: #FFCD0D;
+  color: #ffcd0d;
 }
 
 /* Estilo do input dentro do container de quantidade */
@@ -147,5 +147,3 @@ hr {
   -moz-appearance: none;
   margin: 0;
 }
-
-
