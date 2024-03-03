@@ -6,7 +6,7 @@
 /* fonte  */
 @font-face {
   font-family: "krop 2";
-  src: url("Programacao/fontes/KROP2-BF653c20fc2157e.otf") format("opentype");
+  src: url("misc/fontes/KROP2-BF653c20fc2157e.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -63,7 +63,7 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
       rgba(0, 0, 0, 0.8) 70%,
       rgb(138, 43, 226)
     ),
-    url("./Programacao/imagens_fondo/comida-mexicana-1664393072089_v2_4x3.jpg");
+    url("misc/imagens_fundo/comida-mexicana-1664393072089_v2_4x3.jpg");
 }
 
 .sobremesas--pag {
@@ -81,7 +81,7 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
       rgba(0, 0, 0, 0.8) 70%,
       rgb(137, 43, 226)
     ),
-    url("./Programacao/imagens_fondo/fundo_florido1.png");
+    url("misc/imagens_fundo/fundo_florido1.png");
 }
 
 /* partes de baixo do site */
@@ -98,7 +98,7 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
 }
 
 .Experimente--secoes {
-  background-image: url("Programacao/imagens_fondo/imagenFundo-tranparente.png");
+  background-image: url("misc/imagens_fundo/imagenFundo-tranparente.png");
 }
 
 .nao-alcoolicas--pag {
@@ -108,7 +108,7 @@ a VAR(GRADIENT E A REVERSE-GRADIENTE) */
       rgba(0, 0, 0, 0.8) 95vh,
       rgba(137, 43, 226, 0.678)
     ),
-    url("./Programacao/imagens_fondo/caveira-roxa.jpg");
+    url("misc/imagens_fundo/caveira-roxa.jpg");
 }
 
 .cervejas--pag {
