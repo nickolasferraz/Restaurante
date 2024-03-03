@@ -1,0 +1,151 @@
+/* Estilo geral do card */
+.card--produtos {
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0 rgba(50,50,50, 0.22);
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  height: 400px;
+  transition: all 0.5s ease-out;
+  border: 3px solid #3bb54a;
+}
+
+.card--produtos:hover{
+  transform: translateY(-5px);
+}
+
+/* Botão de adicionar ao carrinho */
+.card--produtos .add--cart--button {
+  margin-top: 30px;
+  position: absolute;
+  margin-left: 160px;
+  width: 50px;
+  padding: 3px;
+  background-color: #FFCD0D;
+  color: #333;
+  font-size: 1rem;
+  transition: all 0.3s ease-out;
+  border-radius: 5px;
+}
+
+
+/* Estilo do container principal */
+.row, #produtos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Preço do produto */
+.card--produtos--preco {
+  margin-top: 32px;
+  position: absolute;
+  margin-left: 85px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Descrição do produto */
+.card--produtos p.card--produtos--descricao {
+  color: #333;
+  white-space: normal;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  font-size: 0.8rem;
+  height: 75px;
+}
+
+/* Imagem do produto */
+.card--produtos--imagem {
+  width: 200px;
+  height: 250px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+/* Título do card */
+.card_titulo {
+  white-space: normal;
+  text-align: center;
+}
+
+/* Linha horizontal */
+hr {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #333;
+  color: black;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Estilo do input de quantidade */
+.quantidade .aumentar, .diminuir {
+  background-color: #FFCD0D;
+  height: 30px;
+  color: rgb(2, 2, 2);
+  font-size: 1rem;
+  transition: all 0.3s ease-out;
+  border-radius: 5px;
+  font-family: 'krop 2';
+}
+
+.card--produtos button:hover {
+  cursor: pointer;
+}
+
+/* Estilo do input personalizado */
+.input--personalizado {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Posicionamento do container de quantidade */
+.card--produtos .quantidade {
+  margin-top: 28px;
+  white-space: nowrap;
+  margin-left: -12px;
+}
+
+
+/* Estilo dos botões dentro do container de quantidade */
+.card--produtos .quantidade button {
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+}
+
+.card--produtos button:hover{
+  background-color: #333;
+  color: #FFCD0D;
+}
+
+/* Estilo do input dentro do container de quantidade */
+.card--produtos .quantidade input {
+  text-align: center;
+  appearance: none;
+  width: 15px;
+  padding: 5px;
+}
+
+/* Ocultando as setas do input */
+.card--produtos .quantidade input::-webkit-inner-spin-button,
+.card--produtos .quantidade input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.card--produtos .quantidade input::-moz-inner-spin-button,
+.card--produtos .quantidade input::-moz-outer-spin-button {
+  -moz-appearance: none;
+  margin: 0;
+}
+
+

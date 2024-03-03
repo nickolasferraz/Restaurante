@@ -1,345 +1,261 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="css/Pg_Sobremesa.css" />
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/nav_bar.css">
-  </head>
-  <body>
-    <script src="/Programacao/script.js"></script>
-    <div class="nav-bar">
-      <header>
-        <nav>
-          <a href="/" class="logo"><img src="img/Logo.png" alt="logo" /></a>
-          <ul class="nav-list">
-            <li><a href="/Programacao/home.html">Home</a></li>
-            <li><a href="/Programacao/Pag_cardapio.html">Cardápio</a></li>
-            <li><a href="/Programacao/Pg_Sobremesa.html">Sobremesas</a></li>
-            <li><a href="/Programacao/bebidas_pag.html">Bebidas</a></li>
-            <li>
-              <a href="/Programacao/carrinho.html"
-                ><img
-                  class="cart-icon"
-                  src="img/shopping-cart.png"
-                  alt="carrinho icon"
-              /></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
 
-    <main>
-      <div class="main-content">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="css/slide.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/nav_bar.css">
+  <link rel="stylesheet" href="Css/footer.css">
+  <link rel="stylesheet" href="Css/cards.css">
+  <link rel="stylesheet" href="Css/global.css">
+  <link rel="stylesheet" href="Css/modalConfirm.css">
+  <script src="modal-confirm.js" defer></script>
+  <link rel="stylesheet" href="Css/scroll.css">
+  <script src="quantity.js" defer></script>
+</head>
+
+<body>
+  <script src="/Programacao/script.js" defer></script>
+  <script src="componente-navbar.js" defer></script>
+
+  <!-- nav bar inserida com js !! -->
+  <div class="nav-bar"></div>
+  <div class="scroll--button">
+    <ul>
+      <li>
+        <a href="/Programacao/Pag_cardapio.html">
+          <img src="img/icons/menu.png"  alt="Icone cardápio">
+          <span>Cardápio</span>
+        </a>
+      </li>
+      <li>
+        <a href="/Programacao/Pg_Sobremesa.html">
+          <img src="img/icons/sweets.png" alt="Icone sobremesas">
+          <span>Sobremesas</span>
+        </a>
+      </li>
+      <li>
+        <a href="/Programacao/bebidas_pag.html">
+          <img src="img/icons/soft-drink.png" alt="Icone Não-Alcoolicas">
+          <span>Bebidas</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <main>
+  <div class="main-content">
       <section>
         <div class="main">
 
           <div class="menu_text">
             <h1>Peça <span>sua comida</span><br>de uma maneira simplificada</h1>
             <h2>Com apenas alguns clicks, monte seu pedido <br>
-                e ele será enviado para a cozinha ao confirmar !
+              e ele será enviado para a cozinha ao confirmar !
             </h2>
           </div>
 
           <div class="main_image">
-            <img src="img/wepik-export-20240119213801DFuW.png" alt="logo">
+            <img src="img/icons/icontaco.png" alt="logo">
           </div>
         </div>
 
 
       </section>
-      
 
-    <br>
-    <!-- programação pratos do dia inicio -->
-    
-    <h1>Pratos do dia</h1>
-    <hr>
-    <div class="row">
-        <div class="cards green">
-            <img class="imagens" src="img/imagens_cardapio/imagem mexicanas/tacos/taco americano.PNG" alt="taco_americano">
-            <h2>Taco Shell</h2>
-            <hr>
-            <p>Taco Shell, uma tortilha de milho frita recheada com a proteína da sua escolha e finalizada com a frescura de uma saladinha de alface e tomate.</p>
-            <br>
-            <button>Adicione ao Carrinho<i class="fa-solid fa-cart-shopping"></i></button>   
-        </div>
-        <div class="cards green">
-            <img class="imagens" src="img/imagens_cardapio/imagem mexicanas/burritos/novo bu.PNG" alt="burrito monte o seu">
-            <h2>Monte seu Burrito</h2>
-            <hr>
-            <p>
-              Para voce que gosta do Burrito  diferente, essa opção vai te agradar, pois nela pode montar seu Burrito da sua maneira!     
-            </p>
-            <br>
-            <br>
-            <br>
-            <button>Adicione ao Carrinho<i class="fa-solid fa-cart-shopping"></i></button>   
-        </div>
-        <div class="cards green">
-            <img class="imagens" src="img/imagens_cardapio/imagem mexicanas/la bomba pimenta.PNG" alt="la bomba">
-            <h2>LA Bomba</h2>
-            <hr>
-            <p>
-                uma explosão de sabores que vai conquistar seu coração! Jalapeños recheados com sour cream suave, envoltos em bacon crocante e perfeitamente assados.  
-            </p>
-            <br>
-            <button>Adicione ao Carrinho<i class="fa-solid fa-cart-shopping"></i></button>   
-        </div>
-        <div class="cards green">
-          <img class="imagens" src="img/imagens_cardapio/imagem mexicanas/hamburguer.webp" alt="hamburguer">
-          <h2>Lanche Mexicano</h2>
-          <hr>
-          <p>
-              O melhor lanche mexicano, acompanha uma deliciosa carne de 180G, abacaxi assado e pimenta Jalapeños recheados com sour cream suave.  
-          </p>
-          <br>
-          <br>
-          <button>Adicione ao Carrinho<i class="fa-solid fa-cart-shopping"></i></button>   
-        </div>
-        <div class="cards green">
-          <img class="imagens" src="img/imagens_cardapio/imagem mexicanas/batatasss.PNG" alt="batatas">
-          <h2>Batatas Crinkle</h2>
-          <hr>
-          <p>
-          Com cheddar irresistível, a Barbacoa incrivelmente deliciosa (costela assada com laranja e chipotle até desmanchar) e o frescor do Sour Cream.
-          </p>
-          <br>
-        
-          <button>Adicione ao Carrinho<i class="fa-solid fa-cart-shopping"></i></button>   
-        </div>
-    </div>
 
-<!-- programação pratos do dia fim -->
+      <br>
 
-        
-        
-     
-      
-      <hr>
-        <strong><center><h1>Pratos Principais</h1></center>
-          <div class="slide_conteiner_2">
-            <div class="blockcard">
-              <div class="card-content">
-                <div>
-                  <article class="card_article">
-                    <img src="/Programacao/img/tres-leches-doces-tipicos-mexico.png" alt="tres-leches-doces-tipicos-mexico/png" class="cardimage">
-                    <div class="card_data">
-                      <h3 class="card_titulo">Bolo de tres leches</h3>
-                      <br>
-                      <p class="card_descrição">
-                        O bolo de tres leches é um forte candidato ao título de sobremesa favorita do
-                        <br> México. Feito, literalmente, com três leites 
-                        <br>(condensado, evaporado e creme integral), o doce é popular.
-                      </p>
-                    </div>
-                  </article> 
-                </div>
-              </div>
+      <ul class="tabs--destaque">
+        <li class="active" data-id="0">Quesadilla</li>
+        <li data-id="1">Taco</li>
+        <li data-id="2">Burrito</li>
+        <li data-id="3">Chocoflan</li>
+      </ul>
+
+    <div class="conteudos--destaque">
+
+        <div class="box show" data-content="0">
+            <img class="destaques--img" src="img_web/imagem mexicanas/QUESADILLA.jpg" alt="">
+            <div>
+                <h3>Quesadillas</h3>
+
+                <h4 class="box--descricao--titulo">O que são?</h4>
+                <p>Tortilhas de milho recheadas com queijo e outros ingredientes, como frango, carne moída ou legumes. São dobradas ao meio e fritas ou grelhadas até o queijo derreter.</p>
+
+                <h4 class="box--descricao--titulo">Sabor e textura</h4>
+            
+                <p>O sabor varia de acordo com os ingredientes do recheio. O queijo derretido proporciona uma textura cremosa e macia. A tortilla frita ou grelhada fica crocante por fora e macia por dentro.</p>
+            
+                <h4 class="box--descricao--titulo">Como experimentar sem medo</h4>
+            
+                <p>Comece com uma quesadilla simples de queijo. Experimente diferentes tipos de queijo, como cheddar, Monterey Jack ou Oaxaca. Adicione outros ingredientes gradualmente, como frango desfiado, carne moída temperada ou legumes salteados.</p>
+            
+                <h4 class="box--descricao--titulo">Dicas</h4>
+            
+                <p>Sirva com guacamole, salsa, creme de leite e outros acompanhamentos. Experimente diferentes tipos de tortilhas, como tortilhas de milho brancas ou amarelas.</p>
             </div>
-            <div class="blockcard">
-              <div class="card-content">
-                <div>
-                  <article class="card_article">
-                    <img src="https://rotasdeviagem.com.br/wp-content/uploads/2020/07/mostachon-de-fresa-doces-tipicos-mexico.jpg" alt="tres-leches-doces-tipicos-mexico/png" class="cardimage">
-                    <div class="card_data">
-                      <h3 class="card_titulo">Mostachon de fresa</h3>
-                      <br>
-                      <p class="card_descrição">
-                        O mostachon de fresa é uma sobremesa coberta com creme de queijo e morangos frescos, <br>bem parecida com uma pavlova.  Sua base fica bem crocante biscoitos 
-                        e nozes esmagados no merengue. O resultado não poderia ser melhor e, o sabor, mais incrível! 
-                      </p>
-                    </div>
-                  </article> 
-                </div>
-              </div>
+        </div>
+
+        <div class="box hide" data-content="1">
+            <img class="destaques--img" src="img/imagens_cardapio/imagem mexicanas/tacos/taco custela.jpg" alt="">
+            <div>
+                <h3>Tacos</h3>
+
+                <h4 class="box--descricao--titulo">O que é?</h4>
+                
+                <p>Tortilhas de milho recheadas com carne, peixe ou legumes. São dobradas ao meio ou enroladas e geralmente servidas com salsa, guacamole e outros acompanhamentos.</p>
+                
+                <h4 class="box--descricao--titulo">Sabor e textura</h4>
+                
+                <p>O sabor varia de acordo com os ingredientes do recheio. A carne pode ser temperada com especiarias mexicanas, como páprica, cominho e pimenta chili. O peixe pode ser grelhado ou frito. Os legumes podem ser salteados ou cozidos no vapor. A tortilla de milho oferece uma textura macia e leve.</p>
+                
+                <h4 class="box--descricao--titulo">Como experimentar sem medo</h4>
+                
+                <p>Comece com um taco simples de carne moída temperada. Experimente diferentes tipos de carne, como carne bovina, suína ou frango. Experimente também tacos de peixe, como tacos de salmão ou camarão.</p>
+                
+                <h4 class="box--descricao--titulo">Dicas</h4>
+                
+                <p>Adicione seus toppings favoritos, como queijo, cebola picada, coentro e molho picante. Experimente diferentes tipos de tortilhas, como tortilhas de milho brancas ou amarelas.</p>
+                
             </div>
-            <div class="blockcard">
-              <div class="card-content">
-                <div>
-                  <article class="card_article">
-                    <img src= "https://rotasdeviagem.com.br/wp-content/uploads/2020/07/bolo-chocolate-com-pimenta-doces-tipicos-mexico.jpg" alt="tres-leches-doces-tipicos-mexico/png" class="cardimage">
-                    <div class="card_data">
-                      <h3 class="card_titulo">Bolo de chocolate <br>com pimenta</h3>
-                      <br>
-                      <p class="card_descrição">
-                        O tipo de doce cuja mistura exige certa experiência para equilibrar os sabores. Acredita-se que o bolo de chocolate com pimenta seja uma herança asteca que, então, podem ter sido os primeiros a misturar os dois ingredientes. Abençoados sejam, pois a sobremesa é maravilhosa! 
-                      </p>
-                    </div>
-                  </article>  
-                </div>
-              </div>
-            </div>
-            <div class="blockcard">
-              <div class="card-content">
-                <div>
-                  <article class="card_article">
-                    <img src=https://rotasdeviagem.com.br/wp-content/uploads/2020/07/pastel-de-elote-doces-tipicos-mexico.jpg alt="tres-leches-doces-tipicos-mexico/png" class="cardimage">
-                    <div class="card_data">
-                      <h3 class="card_titulo">Bolo de elote </h3>
-                      <br>
-                      <p class="card_descrição">
-                        uma sobremesa que fica entre o caminho do bolo e pudim, <br>sem perder a textura e densidade cremosas. O pastel de elote é feito de milho suculento e o leite condensado
-                      </p>
-                    </div>
-                  </article>  
-                </div>
-              </div>
-            </div>
-            <div class="blockcard">
-              <div class="card-content">
-                <div>
-                  <article class="card_article">
-                    <img src="https://rotasdeviagem.com.br/wp-content/uploads/2020/07/cheesecake-de-dulce-de-leche-doces-tipicos-mexico.jpg" alt="tres-leches-doces-tipicos-mexico/png" class="cardimage">
-                    <div class="card_data">
-                      <h3 class="card_titulo">Cheesecake de doce de leite</h3>
-                      <br>
-                      <p class="card_descrição">
-                        O cheesecake de dulce de leche é um tipo de bolo coberto com nozes picadas e recheado com creme de queijo. Apesar de levar poucos ingredientes e exigir algumas horas para esfriar, a sobremesa tem sabor surpreendente.
-                      </p>
-                    </div>
-                  </article>  
-                </div>
-              </div>
-            </div>
-            <div class="blockcard">
-              <div class="card-content">
-                <div>
-                  <article class="card_article">
-                    <img src="https://rotasdeviagem.com.br/wp-content/uploads/2020/07/torta-de-chocolate-maia-doces-tipicos-mexico.jpg" alt="tres-leches-doces-tipicos-mexico/png" class="cardimage">
-                    <div class="card_data">
-                      <h3 class="card_titulo">Torta de chocolate maia </h3>
-                      <br>
-                      <p class="card_descrição">
-                        Os maias deixaram herança histórica inquestionável, também, na culinária. Uma delas, acredita-se, é a arte de moer os grãos de cacau para, então, criar o chocolate. Então, nada mais justo do que criar uma torta de chocolate maia, que leva ainda pimenta e canela.
-                      </p>
-                    </div>
-                  </article>  
-                </div>
-              </div>
-            </div>
-            <div class="blockcard">
-              <div class="card-content">
-                <div>
-                  <article class="card_article">
-                    <img src="https://rotasdeviagem.com.br/wp-content/uploads/2020/07/rosca-de-reyes-doces-tipicos-mexico.jpg" alt="tres-leches-doces-tipicos-mexico/png" class="cardimage">
-                    <div class="card_data">
-                      <h3 class="card_titulo">Rosca de Reyes (Coroa dos reis)</h3>
-                      <br>
-                      <p class="card_descrição">
-                        O México é um país de fortes tradições religiosas, celebrações e comidas. Logo, por quê não agregar tudo isso? Em El Día de Reyes, comemorado em janeiro, é forte a figura da coroa de reis, um pão doce (ou rosca) cujo formato remete ao amor infinito de Jesus. 
-                      </p>
-                    </div>
-                  </article>  
-                </div>
-              </div>
-            </div>
-            <div class="blockcard">
-              <div class="card-content">
-                <div>
-                  <article class="card_article">
-                    <img src="https://rotasdeviagem.com.br/wp-content/uploads/2020/07/torta-de-chocolate-maia-doces-tipicos-mexico.jpg" alt="tres-leches-doces-tipicos-mexico/png" class="cardimage">
-                    <div class="card_data">
-                      <h3 class="card_titulo">Torta de chocolate maia </h3>
-                      <br>
-                      <p class="card_descrição">
-                        Os maias deixaram herança histórica inquestionável, também, na culinária. Uma delas, acredita-se, é a arte de moer os grãos de cacau para, então, criar o chocolate. Então, nada mais justo do que criar uma torta de chocolate maia, que leva ainda pimenta e canela.
-                      </p>
-                    </div>
-                  </article>  
-                </div>
-              </div>
-            </div>
-            <div class="blockcard">
-              <div class="card-content">
-                <div>
-                  <article class="card_article">
-                    <img src="https://rotasdeviagem.com.br/wp-content/uploads/2020/07/rosca-de-reyes-doces-tipicos-mexico.jpg" alt="tres-leches-doces-tipicos-mexico/png" class="cardimage">
-                    <div class="card_data">
-                      <h3 class="card_titulo">Rosca de Reyes (Coroa dos reis)</h3>
-                      <br>
-                      <p class="card_descrição">
-                        O México é um país de fortes tradições religiosas, celebrações e comidas. Logo, por quê não agregar tudo isso? Em El Día de Reyes, comemorado em janeiro, é forte a figura da coroa de reis, um pão doce (ou rosca) cujo formato remete ao amor infinito de Jesus. 
-                      </p>
-                    </div>
-                  </article>  
-                </div>
-              </div>
+        </div>
+
+        <div class="box hide" data-content="2">
+            <img class="destaques--img" src="img/imagens_cardapio/imagem mexicanas/burritos/seven-layer-chicken-burrito-RU358756-af7915c735ff463792ed4f079c2fd3ef.jpg" alt="">
+            <div>
+              <h3>Burritos</h3>
+
+              <h4 class="box--descricao--titulo">O que é?</h4>
+              
+              <p>Tortilhas de farinha grandes recheadas com carne, arroz, feijão, queijo e outros ingredientes. São enrolados e geralmente servidos com salsa, guacamole e outros acompanhamentos.</p>
+              
+              <h4 class="box--descricao--titulo">Sabor e textura</h4>
+              
+              <p>O sabor varia de acordo com os ingredientes do recheio. A carne pode ser temperada com especiarias mexicanas, como páprica, cominho e pimenta chili. O arroz e o feijão fornecem uma base rica e saborosa. O queijo derretido contribui com uma textura cremosa. A tortilla de farinha oferece uma textura macia e flexível.</p>
+              
+              <h4 class="box--descricao--titulo">Como experimentar sem medo</h4>
+              
+              <p>Comece com um burrito simples de carne moída, arroz, feijão e queijo. Experimente diferentes tipos de carne, como carne bovina, suína ou frango. Experimente também burritos vegetarianos, com recheio de legumes como feijão preto, milho e abacate.</p>
+              
+              <h4 class="box--descricao--titulo">Dicas</h4>
+              
+              <p>Adicione seus toppings favoritos, como guacamole, crema de leite, pico de gallo e molho picante. Experimente diferentes tipos de tortilhas de farinha, como tortilhas brancas ou com especiarias.</p>
               
             </div>
-          </div>
-       
-       
-       <hr>
-      
-       <h1 style="text-align: center; padding-top: 50px;">Promoções do Dia</h1>
-       <div class="conteiner-promocoes-do-dia-1">
-          <div class="row2">
-            <div class="card2">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Burrito.JPG/800px-Burrito.JPG" alt="burrito2" type="img/png">
-              <p>Burrito</p>
-              <p>R$ 20,00</p>
-              <button>Comprar</button>
-            </div>
-            <div class="card2">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Burrito.JPG/800px-Burrito.JPG" alt="burrito2" type="img/png">
-              <p>Burrito</p>
-              <p>R$ 20,00</p>
-              <button>Comprar</button>
-            </div>
-            <div class="card2">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Burrito.JPG/800px-Burrito.JPG" alt="burrito2" type="img/png">
-              <p>Burrito</p>
-              <p>R$ 20,00</p>
-              <button>Comprar</button>
-            </div>
-          </div>
-        </div>  
-        
-        <div class="conteiner-promocoes-do-dia-2">
-          <div class="row3">
-            <div class="column3">
-              <div class="card3">
-                <img src="https://images.ricardocuisine.com/services/recipes/1x1/9380.jpg" style="width: 100%;" alt="burrito3">
-                <p>Burrito</p>
-                <p>R$ 23,00</p>
-                <button style="background-color: #54eb08dd;">Comprar</button>
-              </div>
-            </div>
-          </div>
         </div>
-        
-    </main>
+
+        <div class="box hide" data-content="3">
+            <img class="destaques--img" src="img_web/sobremesas mexicana/chocoflan_1.jpg" alt="">
+            <div>
+              <h3>Chocoflan</h3>
+
+              <h4 class="box--descricao--titulo">O que é?</h4>
+              
+              <p>Chocoflan é uma sobremesa cremosa e deliciosa mexicana, semelhante ao pudim, com uma textura suave e um sabor rico de caramelo. É feito com leite, ovos, açúcar e baunilha, e tradicionalmente assado em banho-maria em um ramequim.</p>
+              
+              <h4 class="box--descricao--titulo">Sabor e textura</h4>
+              
+              <p>O sabor do flan é predominantemente doce, com notas de caramelo e baunilha. A textura é suave e cremosa, semelhante ao pudim, mas com uma leveza e aeração que o torna único. O caramelo no fundo do ramequim cria uma camada crocante e saborosa.</p>
+              
+              <h4 class="box--descricao--titulo">Como experimentar sem medo</h4>
+              
+              <p>O flan é uma sobremesa leve e refrescante, perfeita para quem procura um doce suave e saboroso. Se você nunca experimentou flan antes, comece com uma receita tradicional. Você pode encontrar facilmente receitas online ou em livros de receitas.</p>
+              
+              <h4 class="box--descricao--titulo">Dicas</h4>
+              
+              <p>Sirva o flan gelado ou em temperatura ambiente.
+              Decore com frutas frescas, como morangos ou framboesas.
+              Experimente diferentes sabores, como chocolate ou café.
+              Para um toque especial, adicione uma calda de caramelo caseira.
+              </p>
+            </div>
+        </div>
+
+    </div>
+
+
+      <!-- programação pratos do dia inicio -->
+
+    <h1 class="titulo--secoes">Opções recomendadas</h1>
+    <div class="container">
+      <div class="item container--img1">
+        <img src="img_web/imagem mexicanas/burritos/burrito pernil.jpeg" alt="">
+        <p class="produtos--descricao">
+          O Burrito mais gostoso do Mexico, acompanha Penil, alface, arroz temperado e guacamole.!     
+        </p>
+      </div>
+
+      <div class="item container--img2">
+        <img src="img_web/imagem mexicanas/tacos/monte seu taco.jpg" alt="">
+        <p class="produtos--descricao--vert">
+          Para vocêS que gosta de um taco diferente, essa opção vai te agradar, pois nela voce pode montar seu Taco da sua maneira!
+        </p>
+      </div>
+
+      <div class="item container--img3">
+        <img src="img_web/imagem mexicanas/la bomba pimenta.PNG" alt="">
+        <p class="produtos--descricao">
+          Uma explosão de sabores que vai conquistar seu coração! Jalapeños recheados com sour cream suave.
+        </p>
+      </div>
+
+      <div class="item container--img4">
+        <img src="img_web/chile_beans.PNG" alt="">
+        <p class="produtos--descricao--vert">
+          Experimente nosso famoso Chili Beans, onde o feijão vermelho se une à carne moída e especiarias mexicanas, cozinhando lentamente em fogo brando por várias horas.
+        </p>
+      </div>
+
+      <div class="item container--img5">
+        <img src="img_web/imagem mexicanas/nachos.jpg" alt="">
+        <p class="produtos--descricao">
+          Uma enorme porção de nachos para voce dividir. Acompanha guacamole, vinagrete, maionese da casa e queijo cheddar derrertido.
+        </p>
+      </div>
+
+      <!-- <div class="item container--img6"><img src="img_web/imagem mexicanas/la bomba pimenta.PNG" alt=""></div> -->
+    </div>
   </div>
-  </body>
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <img src="img/Logo.png" alt="Logo da empresa">
-      </div>
-      <div class="footer-links">
-        <ul>
-          <li><a href="#">Política de privacidade</a></li>
-          <li><a href="#">Termos de uso</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Github</a></li>
-        </ul>
-      </div>
-      <div class="footer-social-media">
-        <ul>
-          <li><a href="https://github.com/robsthecreator">Robson</a></li>
-          <li><a href="https://github.com/nickolasferraz">Nickolas</a></li>
-          <li><a href="https://github.com/Kayro25">Kayro</a></li>
-          <li><a href="https://github.com/JoaoVitorPinheiro">João</a></li>
-        </ul>
-      </div>
+
+      <!-- programação pratos do dia fim -->
+
+  
+
+  <!-- ícones -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="img/Logo.png" alt="Logo da empresa">
     </div>
-    <div class="footer-copyright">
-      &copy; 2024 La Cantina Del Sabor
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Política de privacidade</a></li>
+        <li><a href="#">Termos de uso</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Github</a></li>
+      </ul>
     </div>
-  </footer>
+    <div class="footer-social-media">
+      <ul>
+        <li><a href="https://github.com/robsthecreator">Robson</a></li>
+        <li><a href="https://github.com/nickolasferraz">Nickolas</a></li>
+        <li><a href="https://github.com/Kayro25">Kayro</a></li>
+        <li><a href="https://github.com/JoaoVitorPinheiro">João</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    &copy; 2024 La Cantina Del Sabor
+  </div>
+</footer>
+
 </html>

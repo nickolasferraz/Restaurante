@@ -1,0 +1,67 @@
+.scroll--button {
+  z-index: 9999;
+  position: fixed;
+  margin-top: 10vw;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  margin-right: 5px;
+}
+  
+  .scroll--button li {
+    background-color: transparent; 
+    border-radius: 0; 
+    width: 50px; 
+    height: 70px; 
+    box-shadow: none; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; 
+  }
+  
+  .scroll--button li img {
+    width: 50px; 
+    height: 50px; 
+    margin-bottom: 10px; 
+    margin-left: 10px;
+  }
+  
+  .scroll--button li a {
+    position: relative; 
+    display: block; 
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  
+  .scroll--button li a span {
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 5px; 
+    font-size: 12px; 
+    background-color: rgb(255, 255, 255); 
+    border-radius: 5px;
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .scroll--button {
+      right: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .scroll--button {
+      bottom: 20px;
+      right: 20px;
+    }
+  }
