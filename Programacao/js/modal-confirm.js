@@ -1,7 +1,8 @@
 const confirmarCompra = function(event) {
+  // pega o nome do produto dentro do h2
   const tituloProduto = event.target.closest('.card--produtos').querySelector('h2').textContent;
 
-
+// cria o modal
     const modal = document.createElement('dialog');
     modal.innerHTML = `
       <div class="modal-container">
@@ -15,6 +16,7 @@ const confirmarCompra = function(event) {
 
     modal.showModal();
 
+// fecha automaticamente o modal em 2,5 segundos
     setTimeout(() => {
       modal.close();
     }, 2500); 
@@ -31,7 +33,7 @@ const confirmarCompra = function(event) {
   };
 
   const botoesCarrinho = document.querySelectorAll('.card--produtos .add--cart--button');
-
+// faz aparecer o modal ao apertar no botão
   for (const botao of botoesCarrinho) {
     botao.addEventListener('click', confirmarCompra.bind(botao));
   }

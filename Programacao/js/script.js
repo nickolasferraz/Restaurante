@@ -4,6 +4,7 @@ const tabs = document.querySelectorAll('[data-id]');
 const contents = document.querySelectorAll('[data-content]');
 let id = 0;
 
+// adiciona e remove a class active (para aparecer com o css) e adiciona a classe hide para esconder as páginas não ativas.
 tabs.forEach(function (tab) {
     tab.addEventListener('click', function () {
         tabs[id].classList.remove('active');
