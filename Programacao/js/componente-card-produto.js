@@ -52,6 +52,8 @@ const produtos = [
 
 const produtosElemento = document.getElementById("produtos");
 
+
+// o For percorre cada item em objetos, cria um card e adiciona em <div id="produtos"></div>
 produtos.forEach((produto) => {
   const cardProdutoElemento = CardProduto(produto);
   produtosElemento.appendChild(cardProdutoElemento);
