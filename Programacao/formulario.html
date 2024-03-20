@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Avaliação</title>
+  <link rel="stylesheet" href="Css/forms.css">
+  <script src="js/form.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="Css/modalConfirm.css">
+</head>
+<body>
+    <div class="cont">
+        <div class="title">
+        <h1>Avalie-nos</h1>
+        <img src="Css/misc/icons/icontaco.png" alt="Taco - Avalie-nos" class="taquinho">
+        </div>
+        <form action="" method="post">
+            <h2 class="titulo--input">O que achou da comida?</h2>
+            <textarea id="foodComents" class="comentario--form" cols="30" rows="5"></textarea>
+            <p class="mensagem--erro--comentario">Você precisa adicionar um comentário</p>
+            <h2 class="titulo--input">Avalie a Comida</h2>
+            <div class="stars">
+            <input class="star star-5" id="star-5" type="radio" name="foodRating" value="5">
+            <label class="star star-5" for="star-5"></label>
+            <input class="star star-4" id="star-4" type="radio" name="foodRating" value="4">
+            <label class="star star-4" for="star-4"></label>
+            <input class="star star-3" id="star-3" type="radio" name="foodRating" value="3">
+            <label class="star star-3" for="star-3"></label>
+            <input class="star star-2" id="star-2" type="radio" name="foodRating" value="2">
+            <label class="star star-2" for="star-2"></label>
+            <input class="star star-1" id="star-1" type="radio" name="foodRating" value="1">
+            <label class="star star-1" for="star-1"></label>
+            <p class="mensagem--erro--estrela">Você precisa selecionar ao menos uma estrela</p>
+            </div>
+
+            <h2 class="titulo--input">Avalie o Estabelecimento</h2>
+            <div class="stars">
+            <input class="star star-5" id="star-5-2" type="radio" name="establishmentRating" value="5">
+            <label class="star star-5" for="star-5-2"></label>
+            <input class="star star-4" id="star-4-2" type="radio" name="establishmentRating" value="4">
+            <label class="star star-4" for="star-4-2"></label>
+            <input class="star star-3" id="star-3-2" type="radio" name="establishmentRating" value="3">
+            <label class="star star-3" for="star-3-2"></label>
+            <input class="star star-2" id="star-2-2" type="radio" name="establishmentRating" value="2">
+            <label class="star star-2" for="star-2-2"></label>
+            <input class="star star-1" id="star-1-2" type="radio" name="establishmentRating" value="1">
+            <label class="star star-1" for="star-1-2"></label>
+            <p class="mensagem--erro--estrela">Você precisa selecionar ao menos uma estrela</p>
+            </div>
+            <h2 class="titulo--input">Deixe um comentário adicional (opcional)</h2>
+            <textarea class="comentario--form" cols="30" rows="5"></textarea>
+            <button id="send--form">Enviar avaliação</button>
+            <p>Clique nas estrelas e deixe seus comentários!</p>
+    </div>
+</body>
