@@ -1,3 +1,6 @@
+let listProduct = sessionStorage.getItem("productList");
+let parseListProduct = JSON.parse(listProduct);
+
 const navbar = document.querySelector('.nav-bar')
 
 let header = document.createElement('nav')
@@ -14,7 +17,7 @@ header.innerHTML = `
         <ul class="navbar--cart">
             <li>
                 <a href="/Programacao/carrinho.html"><ion-icon name="cart-outline" class="nav--cart--icon"></ion-icon>
-                <span class="cart--quantidade">0 itens</span>
+                <span class="cart--quantidade">${parseListProduct == null ? 0 : parseListProduct.length}</span>
                 </a>
             </li>
         </ul>

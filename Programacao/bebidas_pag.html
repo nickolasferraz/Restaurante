@@ -12,9 +12,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
   integrity="sha512-..." crossorigin="anonymous" />
   <link rel="stylesheet" href="Css/scroll.css">
-  <script src="js/quantity.js" defer></script>
+  <script src="js/componente-card-produto.js" defer></script>
   <script src="js/modal-confirm.js" defer></script>
+  <script src="js/scriptPegaCarrinho.js" defer></script>
+  <script src="js/scriptCarrinho.js" defer></script>
   <script src="js/componente-navbar.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/quantity.js" defer></script>
 </head>
 
 <body>
@@ -56,261 +60,19 @@
           </a>
         </li>
       </ul>
+
     </div>
+
     <div class="Bebidas--pag">
       <h1 class="titulo--secoes" id="Drinks">Drinks</h1>
-      <div class="row">
-        <!-- <div id="produtos"></div> -->
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/Margarita-Frozen.png" alt="Margarita-Frozen">
-          <h2>Magarita Frozen</h2>
-          <hr>
-          <p class="card--produtos--descricao">uma explosão refrescante de Tequila Gold, suco de limão e toque de
-            açúcar. Uma bebida gelada que proporciona um sabor equilibrado e uma experiência vibrante a cada gole.</p>
-          <h3 class="card--produtos--preco">22,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/Margarita-Tradicional.png" alt="Margarita">
-          <h2>LA Magarita</h2>
-          <hr>
-          <p class="card--produtos--descricao">Margarita Tradicional: borda do copo salgada, tequila Gold, cointreau e
-            suco de limão se fundem nesta clássica mistura.</p>
-          <h3 class="card--produtos--preco">20,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/Margarita_morango.jpg"
-            alt="Michelada-Classica-Cerveja-Sol">
-          <h2>LA perfección</h2>
-          <hr>
-          <p class="card--produtos--descricao">uma explosão refrescante de Tequila Gold, morangos frecos, suco de limão
-            e toque de açúcar. Uma bebida gelada que proporciona uma experiência vibrante a cada gole</p>
-          <h3 class="card--produtos--preco">18,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/Helado-Borracho.png" alt="Helado-Borracho">
-          <h2>Helado Borracho</h2>
-          <hr>
-          <p class="card--produtos--descricao">Polpa de morango, leite condensado e uma dose de tequila. Batido até
-            ficar em ponto de sorvete!</p>
-          <h3 class="card--produtos--preco">23,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/Mojito.png" alt="Mojito">
-          <h2>Mojito</h2>
-          <hr>
-          <p class="card--produtos--descricao">Mojito Refrescante: a combinação perfeita de rum, hortelã fresca, suco de
-            limão, açúcar e água com gás. Cada gole revela um equilíbrio harmonioso de sabores.</p>
-          <h3 class="card--produtos--preco">20,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/Matador.png" alt="Matador">
-          <h2>EL Matador</h2>
-          <hr>
-          <p class="card--produtos--descricao">Sabores inesqueciveis da tequila, suco de abacaxi, suco de limão e gelo.
-            Uma bebida que combina a intensidade da tequila com a doçura do abacaxi e a acidez do limão.</p>
-          <h3 class="card--produtos--preco">20,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/Charro-Negro2.png" alt="Charro-Negro2">
-          <h2>Charro Negro</h2>
-          <hr>
-          <p class="card--produtos--descricao">Mistura audaciosa de tequila, Coca-Cola e suco de limão. A profundidade
-            da tequila se encontra com a efervescência da cola e a acidez cítrica do limão</p>
-          <h3 class="card--produtos--preco">22,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/Michelada-Classica-Cerveja-Sol.png"
-            alt="Michelada-Classica-Cerveja-Sol">
-          <h2>Michelada Classica</h2>
-          <hr>
-          <p class="card--produtos--descricao">Única com sal na borda do copo, gelo, suco de limão e cerveja Sol ou
-            Corona.</p>
-          <h3 class="card--produtos--preco">18,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/tequila.jpg" alt="tequila">
-          <h2>Tequila Tradicional</h2>
-          <hr>
-          <p class="card--produtos--descricao">José Cuervo Gold ou Silver Especial com um toque mexicano, limao e sal
-          </p>
-          <h3 class="card--produtos--preco">15,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/Tequila-Sunrise-Jose-Cuervo.png"
-            alt="tequila-sunrise">
-          <h2>Cuervo Sunrise</h2>
-          <hr>
-          <p class="card--produtos--descricao">A harmonia entre a intensidade da tequila, a doçura cítrica do suco de
-            laranja e o sutil toque frutado do granadine cria uma experiência vibrante e refrescante.</p>
-          <h3 class="card--produtos--preco">18,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/caipirinha-morango.png"
-            alt="caipirinha-morango">
-          <h2>Caipiriña Roja</h2>
-          <hr>
-          <p class="card--produtos--descricao">Um classico brasileiro, refrescante e saboroso. Temos caipirinha de
-            <strong>saquê, cachaça e vodka.</strong></p>
-          <h3 class="card--produtos--preco">18,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/drink.png" alt="tequila">
-          <h2>Caipirinha Nevada</h2>
-          <hr>
-          <p class="card--produtos--descricao">Caipirinha de Limão com Toque Cremoso: suco de limão, leite condensado e
-            uma dose de saquê, batidos até atingir o ponto de sorvete.</p>
-          <h3 class="card--produtos--preco">20,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-      </div>
+      <div id="bebidasDrinks"></div>
     </div>
 
     <hr / style="border: none;">
     <!--  deixei hr para dividir as opções -->
     <div class="cervejas--pag">
       <h1 class="titulo--secoes" id="Cerveja">Cervejas</h1>
-
-      <div class="row">
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/Cerveja-Corona.png" alt="Cerveja-Corona">
-          <h2>Cerveja Corona </h2>
-          <hr>
-          <p class="card--produtos--descricao">Uma deliciosa cerveja gelada</p>
-          <h3 class="card--produtos--preco">16,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/cerveja2.png" alt="Cerveja-SOL">
-          <h2>Cerveja SOL </h2>
-          <hr>
-          <p class="card--produtos--descricao">Uma deliciosa cerveja gelada</p>
-          <h3 class="card--produtos--preco">16,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/Cerveja-Budweiser-330ml-debetti_img1.webp"
-            alt="Cerveja-Budweiser">
-          <h2>Cerveja Budweiser</h2>
-          <hr>
-          <p class="card--produtos--descricao">Uma deliciosa cerveja gelada</p>
-          <h3 class="card--produtos--preco">16,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/CERVEJA_HEINEKEN.jpg" alt="CERVEJA_HEINEKEN">
-          <h2>Cerveja Heineken</h2>
-          <hr>
-          <p class="card--produtos--descricao">Uma deliciosa cerveja gelada</p>
-          <h3 class="card--produtos--preco">16,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-      </div>
+      <div id="cervejas"></div>
     </div>
 
 
@@ -319,124 +81,7 @@
 
     <div class="nao-alcoolicas--pag">
       <h1 class="titulo--secoes" id="Nao-alcoolicas">Não-Alcoolicas</h1>
-
-      <div class="row">
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/agua-de-tamarindo.png"
-            alt="agua-de-tamarindo">
-          <h2>Agua de Tamarindo</h2>
-          <hr>
-          <p class="card--produtos--descricao">Uma deliciosa agua saborizada de tamarindo</p>
-          <h3 class="card--produtos--preco">12,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/SODA-ITALIANA4.png" alt="SODA-ITALIANA4">
-          <h2>Soda italiana</h2>
-          <hr>
-          <p class="card--produtos--descricao">Bebida refrescante a base de xarope de fruta e água com gás. Sabores:
-            <strong>maçã verde, hibisco, limão siciliano, tangerina, pêssego, morango e cranberry.</strong> </p>
-          <h3 class="card--produtos--preco">15,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/refrigerante_lata.png"
-            alt="refrigerante_lata">
-          <h2>Refrigerante Lata</h2>
-          <hr>
-          <p class="card--produtos--descricao">Refigerante lata: <strong>Coca-cola, fanta laranja, fanta uva, sprite,
-            </strong> </p>
-          <h3 class="card--produtos--preco">7,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/sucos.jpg" alt="sucos">
-          <h2>Sucos Refrescante</h2>
-          <hr>
-          <p class="card--produtos--descricao">Sabores: <strong>morango, laranja, acerola, limao, abacaxi, abacaxi com
-              hortela</strong> </p>
-          <h3 class="card--produtos--preco">12,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/garrafas-agua-crystal.jpg" alt="AguaS">
-          <h2>Agua</h2>
-          <hr>
-          <p class="card--produtos--descricao">Agua: <strong>Com Gás Crystal e Sem Gás</strong> </p>
-          <h3 class="card--produtos--preco">4,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/H20_LIMAO.webp" alt="H2O_limao">
-          <h2>H2O limão</h2>
-          <hr>
-          <p class="card--produtos--descricao"><strong>Bebida leve e refrescante</strong> </p>
-          <h3 class="card--produtos--preco">7,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/limoneto_H20.webp" alt="H2O_limoneto">
-          <h2>H2O limoneto_H20</h2>
-          <hr>
-          <p class="card--produtos--descricao"><strong>Bebida leve e refrescante</strong> </p>
-          <h3 class="card--produtos--preco">7,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/drinks mexicano/SUCO_LIFE.webp" alt="SUCO_LIFE">
-          <h2>Suco Life</h2>
-          <hr>
-          <p class="card--produtos--descricao">suco geladinho de laranja 300ml</p>
-          <h3 class="card--produtos--preco">7,00R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-      </div>
+      <div id="sem-alcool"></div>
     </div>
 
     <hr />

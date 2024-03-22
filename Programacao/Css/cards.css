@@ -30,9 +30,57 @@
   border-radius: 5px;
 }
 
-/* Estilo do container principal */
+/* Estilo do container dos tacos */
 .row,
-#produtos {
+#tacos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.row,
+#burritos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.row,
+#experimente {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.row,
+#sobremesas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.row,
+#bebidasDrinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.row,
+#cervejas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.row,
+#sem-alcool {
   display: flex;
   align-items: center;
   justify-content: center;

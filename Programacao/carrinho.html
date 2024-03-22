@@ -8,7 +8,11 @@
   <link rel="stylesheet" href="css/carrinho.css">
   <link rel="stylesheet" href="css/nav_bar.css">
   <link rel="stylesheet" href="Css/global.css">
+  <link rel="stylesheet" href="Css/modalConfirm.css">
   <script src="js/componente-navbar.js" defer></script>
+  <script src="js/scriptCarrinho.js" defer></script>
+  <script src="js/scriptPegaCarrinho.js" defer></script>
+  <script src="js/checkout.js" defer></script>
   <script src="js/quantity.js" defer></script>
 </head>
 
@@ -21,89 +25,34 @@
   </div>
 
   <div class="numero-mesa-externo">
-    Mesa: 12
+    <form>
+      <label for="mesa">Mesa:</label><br>
+      <select name="mesa" id="mesa">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+    </form>
   </div>
 
   <main>
 
     <section class="row--carrinho">
-      <div class="card--produtos--carrinho">
-        <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco"
-          class="card--produtos--carrinho--imagem">
-        <div class="card_titulo">
-          <h3>Taco Shell</h3>
-        </div>
-        <h3 class="preco">R$ 10,00</h3>
-        <div class="quantidade">
-          <button class="diminuir">-</button>
-          <input type="number" value="1" class="input--personalizado">
-          <button class="aumentar">+</button>
-        </div>
-        <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
-      </div>
-      <div class="card--produtos--carrinho">
-        <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco"
-          class="card--produtos--carrinho--imagem">
-        <div class="card_titulo">
-          <h3>Taco Shell</h3>
-        </div>
-        <h3 class="preco">R$ 10,00</h3>
-        <div class="quantidade">
-          <button class="diminuir">-</button>
-          <input type="number" value="1" class="input--personalizado">
-          <button class="aumentar">+</button>
-        </div>
-        <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
-      </div>
-      <div class="card--produtos--carrinho">
-        <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco"
-          class="card--produtos--carrinho--imagem">
-        <div class="card_titulo">
-          <h3>Taco Shell</h3>
-        </div>
-        <h3 class="preco">R$ 10,00</h3>
-        <div class="quantidade">
-          <button class="diminuir">-</button>
-          <input type="number" value="1" class="input--personalizado">
-          <button class="aumentar">+</button>
-        </div>
-        <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
-      </div>
-      <div class="card--produtos--carrinho">
-        <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco"
-          class="card--produtos--carrinho--imagem">
-        <div class="card_titulo">
-          <h3>Taco Shell</h3>
-        </div>
-        <h3 class="preco">R$ 10,00</h3>
-        <div class="quantidade">
-          <button class="diminuir">-</button>
-          <input type="number" value="1" class="input--personalizado">
-          <button class="aumentar">+</button>
-        </div>
-        <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
-      </div>
-      <div class="card--produtos--carrinho">
-        <img src="img_web/imagem mexicanas/tacos/taco americano.PNG" alt="Taco"
-          class="card--produtos--carrinho--imagem">
-        <div class="card_titulo">
-          <h3>Taco Shell</h3>
-        </div>
-        <h3 class="preco">R$ 10,00</h3>
-        <div class="quantidade">
-          <button class="diminuir">-</button>
-          <input type="number" value="1" class="input--personalizado">
-          <button class="aumentar">+</button>
-        </div>
-        <button class="remover"><ion-icon name="trash-outline"></ion-icon></button>
-      </div>
-
 
     </section>
 
     <section class="resumo">
       <!-- <span class="total-itens">2 itens</span> -->
-      <span class="total-valor">Total: R$ 25,00</span>
+
       <button class="botao-checkout">Finalizar Compra</button>
     </section>
 

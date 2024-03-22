@@ -13,10 +13,12 @@
   <link rel="stylesheet" href="Css/scroll.css">
   <link rel="stylesheet" href="Css/modalConfirm.css">
   <title>Cardapio</title>
-  <script src="js/script.js"></script>
   <script src="js/componente-card-produto.js" defer></script>
-  <script src="js/componente-navbar.js" defer></script>
   <script src="js/modal-confirm.js" defer></script>
+  <script src="js/scriptPegaCarrinho.js" defer></script>
+  <script src="js/scriptCarrinho.js" defer></script>
+  <script src="js/componente-navbar.js" defer></script>
+  <script src="js/script.js" defer></script>
   <script src="js/quantity.js" defer></script>
 
 </head>
@@ -51,310 +53,21 @@
     <div class="tacos--secao" id="Taco">
       <h1 class="titulo--secoes">Tacos lokos</h1>
       <!-- produtos adicionados com componente -->
-      <div id="produtos"></div>
-
-
+      <div id="tacos"></div>
     </div>
 
     <div class="burritos--secao">
       <h1 class="titulo--secoes" id="Burrito">Burritos</h1>
-      <div class="row">
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/imagem mexicanas/burritos/burrito_frango.jpg"
-            alt="burrito frango">
-          <h2>el burrito de pollo</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            Um delicioso Burrito de frango cremoso que acompanha nosso molho especial. (contem pimentão verde, cebola e
-            pimentão vermelho)
-          </p>
-          <h3 class="card--produtos--preco">12,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/imagem mexicanas/burritos/burrito veggie.jpg"
-            alt="burrito vegetariano">
-          <h2>Burrito Veggie</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            Otima opção de Burrito vegetariano. massa tradicional receada de carne de soja com alface fresco, tomate e
-            guacamole.
-          </p>
-          <h3 class="card--produtos--preco">12,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/imagem mexicanas/burritos/Surf-and-Turf-Burrito-27-of-56.jpg"
-            alt="burrito Misto">
-          <h2>Burrito Misto</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            O Burrito mais gostoso do mundo,acompanha camarão, filé suino, arroz temperado e guacamole.
-          </p>
-          <h3 class="card--produtos--preco">12,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/imagem mexicanas/burritos/burrito carne moida2.PNG"
-            alt="burrito carne moida">
-          <h2>Burrito Carne Loka</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            Com uma deliciosa carne moida de contra-filé acompanhado de um creme azedo que da o toque especial.
-          </p>
-          <h3 class="card--produtos--preco">12,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/imagem mexicanas/burritos/novo bu.PNG"
-            alt="burrito monte o seu">
-          <h2>Monte seu Burrito</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            Para voce que gosta do Burrito diferente, essa opção vai te agradar, pois nela pode montar seu Burrito da
-            sua maneira!
-          </p>
-          <h3 class="card--produtos--preco">12,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/imagem mexicanas/burritos/burrito pernil.jpeg"
-            alt="burrito monte o seu">
-          <h2>Burrito de Penil</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            O Burrito mais gostoso do Mexico,acompanha Penil,alface, arroz temperado e guacamole!
-          </p>
-          <h3 class="card--produtos--preco">12,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/imagem mexicanas/burritos/burrito-feijao.jpg"
-            alt="burrito-feijao">
-          <h2>Burrito de feijão</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            Uma opção vegetariana, que acompanha feijão mexicano temperado com arroz cremoso e milho, abacate picado
-            cream cheese.
-          </p>
-          <h3 class="card--produtos--preco">12,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/imagem mexicanas/burritos/burrito-queijoCremoso.jpg"
-            alt="burrito-queijoCremoso">
-          <h2>Burrito de queijo</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            Otima opção vegetariana, acompanha queijo cremoso, feijão loko, abacate picado e tomate.
-          </p>
-          <h3 class="card--produtos--preco">12,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-      </div>
-
+      <!-- produtos adicionados com componente -->  
+      <div id="burritos"></div>
     </div>
     
     <div class="Experimente--secoes" id="Experimente">
-
       <h1 class="titulo--secoes">Experimente</h1>
-      <!-- <div class="slide_conteiner_2"> -->
-      <div class="row">
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/chile_beans.PNG" alt="chilli">
-          <h2>Chili loko</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            Experimente nosso famoso Chili Beans, onde o feijão vermelho se une à carne moída e especiarias mexicanas,
-            cozinhando lentamente em fogo brando por várias horas.
-          </p>
-          <h3 class="card--produtos--preco">12,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/imagem mexicanas/la bomba pimenta.PNG" alt="la bomba">
-          <h2>LA Bomba</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            Uma explosão de sabores que vai conquistar seu coração! Jalapeños recheados com sour cream suave, envoltos
-            em bacon crocante e perfeitamente assados.
-          </p>
-          <h3 class="card--produtos--preco">12,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/imagem mexicanas/hamburguer.webp" alt="hamburguer">
-          <h2>Lanche Mexicano</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            O melhor lanche mexicano, acompanha uma deliciosa carne de 180G, abacaxi assado e pimenta Jalapeños
-            recheados com sour cream suave.
-          </p>
-          <h3 class="card--produtos--preco">12,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/imagem mexicanas/nachos.jpg" alt="hnachos">
-          <h2>La nachos</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            Uma enorme porção de nachos para voce dividir. Acompanha guacamole, vinagrete, maionese da casa e queijo
-            cheddar derrertido
-          </p>
-          <h3 class="card--produtos--preco">12,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/imagem mexicanas/batatasss.PNG" alt="batatas">
-          <h2>Batatas Crinkle</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            Com cheddar irresistível, a Barbacoa incrivelmente deliciosa (costela assada com laranja e chipotle até
-            desmanchar) e o frescor do Sour Cream.
-          </p>
-          <h3 class="card--produtos--preco">12,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/imagem mexicanas/frango-frito.jpg" alt="frango-frito">
-          <h2>Los Pollos Lokos</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            um delicioso e crocante frango frito empanados com tortillas de milho, uma explosão de sabor e crocância que
-            vai te conquistar!
-            Perfeitas para compartilhar com os amigos e a família.
-          </p>
-          <h3 class="card--produtos--preco">12,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/imagem mexicanas/QUESADILLA-FRANGO.jpg"
-            alt="QUESADILLA-FRANGO">
-          <h2>Pollos Cremoso</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            Uma deliciosa porção de Quesadilla de frango cremoso com queijo cheddar. Acompanha guacamole, coalhada e
-            salada
-          </p>
-          <h3 class="card--produtos--preco">25,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-        <div class="card--produtos">
-          <img class="card--produtos--imagem" src="img_web/imagem mexicanas/QUESADILLA.jpg" alt="Quesadilla">
-          <h2>Pollos Tradicional</h2>
-          <hr>
-          <p class="card--produtos--descricao">
-            Uma deliciosa porção Quesadillas tradicional de carne loka e cream cheese Cremoso. Acompanha coalhada e
-            molho de tomate da casa.
-          </p>
-          <h3 class="card--produtos--preco">12,90R$</h3>
-          <button class="add--cart--button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <div class="quantidade">
-            <button class="diminuir">-</button>
-            <input type="number" value="1" class="input--personalizado">
-            <button class="aumentar">+</button>
-          </div>
-        </div>
-      </div>
-
+      <!-- produtos adicionados com componente -->  
+      <div id="experimente"></div>
     </div>
-    </div>
-
-
-
-    <!-- <i class="fas fa-envelope"></i>
-            <i class="fa-solid fa-li"></i>
-            <i class="fa-regular fa-taco"></i>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <i class="fa-solid fa-list"></i>
-            <i class="fa-solid fa-link"></i>
-            <i class="fa-regular fa-credit-card"></i>
-              </ul> -->
-
-
-
-
-
-
   </main>
-
   <!-- ícones -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
