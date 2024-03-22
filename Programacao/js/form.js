@@ -3,13 +3,23 @@ let foodComments = document.getElementById("foodComents");
 let mensagemErro = document.querySelector(".mensagem--erro--comentario");
 let mensagensErroEstrela = document.querySelectorAll(".mensagem--erro--estrela");
 
+// Flag para indicar se o formulário pode ser enviado
+let canSubmit = true;
+
+function updateSubmitButton() {
+  // Habilita o botão de envio apenas se todas as validações forem passadas
+  document.getElementById('send--form').disabled = !canSubmit;
+}
+
 
 foodComments.addEventListener("blur", function() {
   if (foodComments.value === "") {
     mensagemErro.style.display = "block";
+    canSubmit = false; // Desabilita o envio se o campo estiver vazio
   } else {
     mensagemErro.style.display = "none";
   }
+  updateSubmitButton(); // Atualiza o estado do botão de envio
 });
 
 const avaliacaoEstrelas = document.querySelectorAll('input[name="foodRating"]');
@@ -25,9 +35,11 @@ function updateStarError(starInputs, errorMessage) {
   }
   if (!checked) {
     errorMessage.style.display = "block";
+    canSubmit = false; // Desabilita o envio se nenhuma estrela for selecionada
   } else {
     errorMessage.style.display = "none";
   }
+  updateSubmitButton(); // Atualiza o estado do botão de envio
 }
 
 // Attach event listeners to each star radio button
