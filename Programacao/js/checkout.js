@@ -50,3 +50,4 @@ const botaoCheckout = document.getElementsByClassName("botao-checkout");
 for (var i = 0; i < botaoCheckout.length; i++) {
   botaoCheckout[i].addEventListener("click", confirmarCompra);
 }
+
