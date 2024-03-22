@@ -1,3 +1,42 @@
+/* Número da mesa */
+.numero-mesa-externo {
+  -webkit-box-shadow: -2px 3px 25px 2px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: -2px 3px 25px 2px rgba(0, 0, 0, 0.74);
+  box-shadow: -2px 3px 20px 2px rgba(0, 0, 0, 0.74);
+  position: fixed;
+  margin-left: 90vw;
+  padding: 10px;
+  background-color: #ffcd0d;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  top: 100px;
+  z-index: 999;
+  text-align: center;
+}
+
+select {
+  /* Tirando o padrão do select */
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  width: 6rem;
+  padding: 1rem 4rem 1rem 1rem;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+      no-repeat right 0.8em center / 1.2em,
+    linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.3) 3em,
+      rgba(255, 255, 255, 0.2) 3em
+    );
+  color: #333;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
 .mascote--carrinho {
   position: absolute;
   z-index: -4;
@@ -5,22 +44,7 @@
   left: 50vw;
 }
 
-/* Número da mesa */
-.numero-mesa-externo {
-  -webkit-box-shadow: -2px 3px 25px 2px rgba(0,0,0,0.74);
-  -moz-box-shadow: -2px 3px 25px 2px rgba(0,0,0,0.74);
-  box-shadow: -2px 3px 20px 2px rgba(0,0,0,0.74);
-  position: fixed;
-  margin-left: 90vw;
-  padding: 10px;
-  background-color: #FFCD0D;
-  color: #333;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border-radius: 5px;
-  top: 100px;
-  z-index: 999;
-}  
+
 
 /* Seção do carrinho */
 .row--carrinho {
@@ -52,18 +76,18 @@
 
 .card--produtos--carrinho:hover {
   transition: 1.8s;
-} 
+}
 
 .card--produtos--carrinho button {
   text-align: center;
   bottom: 20px;
-  background-color: #FFCD0D;
+  background-color: #ffcd0d;
   height: 30px;
   color: rgb(2, 2, 2);
   font-size: 1rem;
   transition: all 0.3s ease-out;
   border-radius: 5px;
-  font-family: 'krop 2';
+  font-family: "krop 2";
 }
 
 .card--produtos--carrinho button:hover {
@@ -102,8 +126,8 @@
 }
 
 .card--produtos--carrinho .quantidade {
-  position: absolute; 
-  bottom: 10px; 
+  position: absolute;
+  bottom: 10px;
   right: 10px;
 }
 
@@ -113,11 +137,10 @@
   font-size: 16px;
   transition: all 0.3s ease-out;
 }
-.card--produtos--carrinho .quantidade button:hover{
+.card--produtos--carrinho .quantidade button:hover {
   background-color: #333;
-  color: #FFCD0D;
+  color: #ffcd0d;
 }
-
 
 /* input personalizado */
 .card--produtos--carrinho .quantidade input {
@@ -142,7 +165,7 @@
 }
 
 .card--produtos--carrinho .remover {
-  position: absolute; 
+  position: absolute;
   top: 10px;
   right: 10px;
   background-color: #ff0d0d;
@@ -156,15 +179,15 @@
 .card--produtos--carrinho .remover:hover {
   cursor: pointer;
   background-color: #333;
-  color: #FFCD0D;
+  color: #ffcd0d;
 }
 
 /* Resumo do carrinho */
 
 .resumo {
-  -webkit-box-shadow: -2px 3px 25px 2px rgba(0,0,0,0.74);
-  -moz-box-shadow: -2px 3px 25px 2px rgba(0,0,0,0.74);
-  box-shadow: -2px 3px 20px 2px rgba(0,0,0,0.74);
+  -webkit-box-shadow: -2px 3px 25px 2px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: -2px 3px 25px 2px rgba(0, 0, 0, 0.74);
+  box-shadow: -2px 3px 20px 2px rgba(0, 0, 0, 0.74);
   border: #333 2px solid;
   position: fixed;
   bottom: 10px;
@@ -173,7 +196,7 @@
   justify-content: flex-end;
   gap: 30px;
   padding: 15px;
-  background-color: #FFCD0D;
+  background-color: #ffcd0d;
   border-radius: 5px;
   color: #333;
 }
@@ -186,7 +209,7 @@
 
 .botao-checkout {
   background-color: #333;
-  color: #FFCD0D;
+  color: #ffcd0d;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 5px;
@@ -199,4 +222,3 @@
   background-color: #5aff0d;
   color: #333;
 }
-
