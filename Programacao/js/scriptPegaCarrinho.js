@@ -5,11 +5,11 @@ for (var i = 0; i < addToCartButtons.length; i++) {
 
 function addProductToCart(event) {
   const button = event.target;
-  const index = Array.from(addToCartButtons).indexOf(button);
-  const productInfos = button.parentElement.parentElement.parentElement.parentElement.parentElement
-  const productImage = productInfos.getElementsByClassName("card--produtos--imagem")[index].src;
-  const productName = productInfos.getElementsByTagName("h2")[index].innerText;
-  const productPrice = productInfos.getElementsByClassName("card--produtos--preco")[index].innerText;
+  const productCard = button.closest(".card--produtos");
+
+  const productImage = productCard.querySelector(".card--produtos--imagem").src;
+  const productName = productCard.querySelector("h2").innerText;
+  const productPrice = productCard.querySelector(".card--produtos--preco").innerText;
 
   let product = {
     img: productImage,
