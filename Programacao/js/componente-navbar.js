@@ -6,7 +6,7 @@ const navbar = document.querySelector('.nav-bar')
 let header = document.createElement('nav')
 
 header.innerHTML = `
-        <a href="/Programacao/home.html" class="logo"> <img src="img/Logo.png" alt="logo" /></a>
+        <a href="/Programacao/index.html" class="logo"> <img src="img/Logo.png" alt="logo" /></a>
 
         <ul class="nav-list">
             <li><a href="/index.html">Home</a></li>
